@@ -1,0 +1,62 @@
+.height-label {
+    font-weight: 3px;
+    font-size: 15pt;
+}
+
+body{
+    font-family: "Amatic SC Regular";
+}
+
+.x.axis>.tick> line {
+    stroke-opacity: 0;
+}
+
+.myh1{
+    color: #2D3319;
+    text-align: center;
+    font-size: 40pt;
+}
+.myh2{
+    color: #517664;
+    text-align: center;
+}
+
+.yaxis{
+    font-family: "Amatic SC Regular";
+    font-size: 25px;
+    font-weight: bold;
+    font-kerning: 2;
+}
+
+.label{
+    color: #517664;
+    font-weight: bolder;
+    font-size: 20pt;
+}
+
+.col-sm,#wiki{
+    text-align: center;
+    font-weight: bold;
+    font-size: 14pt;
+}
+
+#buildingImage{
+    align-content: center;
+    margin-top: 15px;
+}
+
+
+#buildingName{
+    text-align: center;
+    font-weight: bold;
+}
+
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mybar:hover {
+    fill: #517664;
+}

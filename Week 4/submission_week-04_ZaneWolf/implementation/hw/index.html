@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>CS171 - Boilerplate</title>
+
+		<!-- Load CSS libraries -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/style.css">
+
+		<!-- GOOGLE FONTS -->
+		<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,400italic,300italic' rel='stylesheet' type='text/css'>
+	</head>
+
+	<body style="padding: 5vh">
+	<div class="container-fluid">
+		<div class="row"> <!-- headers -->
+			<div class = "col">
+				<h1 class="myh1">REACHING FOR THE GODS</h1>
+				<h2 class="myh2">a short survey of man-made mount olympuses</h2>
+			</div>
+		</div>
+	<hr>
+		<div class="row">
+			<!-- barchart area -->
+			<div class="col" id = "chartarea">
+<!--				<div id="tooltip" class="hidden">-->
+<!--					<p id="value"></p>-->
+<!--				</div>-->
+			</div>
+
+			<!-- info area -->
+			<div class="col" id = "infoarea">
+
+				<img class="center-block" id="buildingImage" height = 300px; src="img/1.jpg">
+				<h3 id = "buildingName"></h3>
+				<hr>
+				<div class="row">
+					<div class="col-sm label">Height (m)</div>
+					<div class="col-sm" id = "buildingHeight"></div>
+				</div>
+				<hr>
+				<div class="row">
+					<div class="col-sm label">City</div>
+					<div class="col-sm" id = "buildingCity"></div>
+				</div>
+				<hr>
+				<div class="row">
+					<div class="col-sm label">Country</div>
+					<div class="col-sm" id = "buildingCountry"></div>
+				</div>
+				<hr>
+				<div class="row">
+					<div class="col-sm label">Floors</div>
+					<div class="col-sm" id = "buildingFloors"></div>
+				</div>
+				<hr>
+				<div class="row">
+					<div class="col-sm label">Completed in</div>
+					<div class="col-sm" id = "buildingDone"></div>
+				</div>
+				<hr>
+				<div class="row">
+					<div  class="col" style="text-align: center;">
+							<a id = "wiki" href="" target="_blank"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<!-- embedding JS libraries -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+	<!-- d3 -->
+	<script src="https://d3js.org/d3.v6.min.js"></script>
+
+	<!-- own js files -->
+	<script src="js/main.js"></script>
+	</body>
+</html>

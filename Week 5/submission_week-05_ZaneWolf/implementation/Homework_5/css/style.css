@@ -1,0 +1,103 @@
+body, html {
+    height: 97%;
+}
+
+body{
+    /*background-color: #CDC6AE;*/
+    font-family: "Special Elite Regular";
+    margin-top: 0;
+    background-image: "url(../images/camp.jpg)";
+}
+
+.header {
+    overflow: hidden;
+}
+.header img {
+    /*margin-left: 50%;*/
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    margin-left: 0;
+    margin-right: 0;
+    object-fit: contain;
+    /*height: auto;*/
+    /*transform: translateX(-50%);*/
+}
+
+#linechart h2 {
+    text-align: center;
+    color: #38686A;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    transform: translate(30px,20px);
+
+}
+
+#barchart h2 {
+    text-align: center;
+    color: #38686A;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    transform: translate(5px,20px);
+
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+
+    /*-webkit-text-stroke-color: white;*/
+    /*!*stroke-width: 3px;*!*/
+}
+
+.hero-text h1{
+    font-size: 40pt;
+}
+
+
+.yaxis text{
+    font-family: "Special Elite Regular";
+    stroke: #38686A;
+    fill: #38686A;
+    font-size: 14pt;
+    stroke-width: 0.2pt ;
+}
+
+.xaxis text{
+    font-family: "Special Elite Regular";
+    stroke: #38686A;
+    fill: #38686A;
+    font-size: 10pt;
+    stroke-width: 0.1pt;
+    transform: rotate(-45);
+}
+
+.yBarAxis text{
+    font-family: "Special Elite Regular";
+    stroke: #38686A;
+    fill: #38686A;
+    font-size: 14pt;
+    stroke-width: 0.2pt ;
+}
+
+.xBarAxis text{
+    font-family: "Special Elite Regular";
+    stroke: #38686A;
+    fill: #38686A;
+    font-size: 12pt;
+    stroke-width: 0.1pt ;
+}
+
+.xaxis path {
+    stroke: none;
+}
+
+.ylabel {
+    font-size: 16pt;
+}
+
+

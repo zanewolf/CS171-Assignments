@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="59fd83a1-f79d-41b2-af15-9a727e0af780" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1hTfIizWyeORszxqVIqk3T4rJ89" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Zane\Documents\School\Classes\Harvard\CS_171_Data_Vis\Assignments\Week 3\Lab3" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="59fd83a1-f79d-41b2-af15-9a727e0af780" name="Default Changelist" comment="" />
+      <created>1600039925624</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1600039925624</updated>
+      <workItem from="1600039926814" duration="14830000" />
+      <workItem from="1600101681476" duration="196000" />
+      <workItem from="1600111616065" duration="1918000" />
+      <workItem from="1600272798952" duration="983000" />
+      <workItem from="1600350304218" duration="56000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1092" y="307" key="FileChooserDialogImpl" timestamp="1600130330988">
+      <screen x="0" y="0" width="1649" height="1143" />
+    </state>
+    <state x="1025" y="-790" key="FileChooserDialogImpl/0.0.1649.1143/-205.-1080.1858.1080@-205.-1080.1858.1080" timestamp="1600089659210" />
+    <state x="1092" y="307" key="FileChooserDialogImpl/0.0.1649.1143/-205.-1080.1858.1080@0.0.1649.1143" timestamp="1600130330988" />
+  </component>
+</project>

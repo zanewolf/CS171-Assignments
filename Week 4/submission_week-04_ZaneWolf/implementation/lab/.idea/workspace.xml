@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="939b6820-85e8-4631-bf3c-3d5156c13b74" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="1hpUanrvGW6bMa0Wnqxv3PE0Pi9" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="939b6820-85e8-4631-bf3c-3d5156c13b74" name="Default Changelist" comment="" />
+      <created>1600707592635</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1600707592635</updated>
+      <workItem from="1600707593753" duration="6575000" />
+      <workItem from="1600735015527" duration="4165000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="42" y="-841" width="672" height="60" key="search.everywhere.popup" timestamp="1600709515256">
+      <screen x="-205" y="-1080" width="1858" height="1080" />
+    </state>
+    <state x="42" y="-841" width="672" height="60" key="search.everywhere.popup/0.0.1649.1143/-205.-1080.1858.1080@-205.-1080.1858.1080" timestamp="1600709515256" />
+  </component>
+</project>

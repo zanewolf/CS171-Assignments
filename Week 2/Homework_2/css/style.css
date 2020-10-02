@@ -1,0 +1,61 @@
+h1 {
+    text-align: center;
+    font-family: Quicksand;
+    margin: 10px;
+}
+
+h2 {
+    text-align: center;
+    font-family: Quicksand;
+
+}
+
+h3 {
+    margin-bottom:20px;
+    margin-top: 20px;
+}
+
+.table {
+    font-family: Quicksand;
+}
+
+#bonus {
+    font-family: "Champagne & Limousines";
+    font-weight: bold;
+}
+
+.subtitle{
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.carousel-item {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 2%;
+}
+
+/*.carousel-item > .item > img {*/
+/*    width: 80%;*/
+/*    height: auto;*/
+/*}*/
+
+/*.carousel{*/
+/*    align-content: center;*/
+/*}*/
+
+.carousel-caption {
+
+    opacity: 60%;
+    /*background-color: grey;*/
+    margin-top: 20px;
+    position: relative;
+    left: auto;
+    right: auto;
+}
+
+.carousel {
+    background-color: black;
+}

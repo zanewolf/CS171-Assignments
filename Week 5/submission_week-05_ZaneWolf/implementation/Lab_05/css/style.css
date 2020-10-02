@@ -1,0 +1,75 @@
+body{
+  background-color: mintcream;
+}
+h1 {
+  font-family: "Quicksand";
+  text-align: center;
+  font-size: 60pt;
+
+}
+/**** ADD YOUR STYLES ****/
+
+/****************/
+/*   BAR-CHART  */
+/****************/
+
+
+.bar {
+  fill: #3C948B;
+}
+
+.bar:hover {
+  fill: #327972;
+}
+
+.axis {
+  font: 10px sans-serif;
+}
+
+
+.domain {
+  fill: none;
+  stroke: #888;
+  shape-rendering: crispEdges;
+}
+
+#chart-area text {
+  font-size: 4px;
+}
+
+.center-block {
+  display: block;
+  margin-left: 15%;
+  margin-right: 25%;
+}
+
+.axis-label {
+  fill: #888;
+  font-size: 14px;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #333;
+  shape-rendering: crispEdges;
+}
+
+.axis text {
+  font-family: "Roboto Light";
+  font-size: 14px;
+}
+
+.xlabel {
+  fill:none;
+  stroke: grey;
+  font-size: 12px;
+  font-weight: lighter;
+}
+
+.ylabel {
+  fill:none;
+  stroke: grey;
+  font-size: 12px;
+  font-weight: lighter;
+}

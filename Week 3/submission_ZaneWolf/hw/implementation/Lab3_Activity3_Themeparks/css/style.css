@@ -1,0 +1,108 @@
+/* PRE-CONFIGURED STYLES */
+
+
+/****************/
+/*   BAR-CHART  */
+/****************/
+
+body {
+  background-image: url("../park.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: dimgray;
+}
+#chart-area{
+  color: white;
+  /*background-color: grey;*/
+  background: rgba(180,180,180,0.5);
+  /*opacity: 70%;*/
+  font-weight: bold;
+  margin-top: 30%;
+  /*font-: 100%;*/
+}
+.bar {
+  /*fill: steelblue;*/
+  fill: #fff;
+  -webkit-animation: random 10s infinite;
+  animation: random 10s infinite;
+}
+
+/*.generated-content {*/
+/*  background-color: #fff;*/
+
+/*}*/
+/*at the risk of becoming a one trick pony, I kinda like this. I won't do it again. Promise. :D */
+@keyframes  random {
+  10% { fill: red; }
+  20% { fill: darkorange; }
+  30% { fill: yellow; }
+  40% { fill: greenyellow; }
+  50% { fill: green; }
+  60% { fill: deepskyblue; }
+  70% { fill: blue; }
+  80% { fill: indigo; }
+  90% {fill: darkviolet;}
+  100% {fill: white;}
+
+}
+
+/*I know, I don't think hover works with my magical color animation. Ah well. */
+.bar:hover {
+  fill: black;
+}
+
+.axis {
+  font: 20px sans-serif;
+  font-family: glyph;
+  margin:20px;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x-axis path {
+  display: none;
+}
+
+.axis-title {
+	color: white;
+	font-size: 10px;
+}
+
+
+/****************/
+/*   TOOLTIPS   */
+/****************/
+
+.d3-tip {
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+  pointer-events: none;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 20px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  pointer-events: none;
+}
+
+/* Northward tooltips */
+.d3-tip.n:after {
+  content: "\25BC";
+  margin: -3px 0 0 0;
+  top: 100%;
+  left: 0;
+  text-align: center;
+}

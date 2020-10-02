@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d8bb76bb-69a0-4c6c-8c9c-8d29c65d2056" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="1hVI8eHeUaCIeHyzuZhNuUWBovx" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d8bb76bb-69a0-4c6c-8c9c-8d29c65d2056" name="Default Changelist" comment="" />
+      <created>1600089675349</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1600089675349</updated>
+      <workItem from="1600089676461" duration="10359000" />
+      <workItem from="1600101644724" duration="35000" />
+      <workItem from="1600130335219" duration="4707000" />
+      <workItem from="1600350306227" duration="53000" />
+      <workItem from="1600696596316" duration="1228000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="605" y="327" key="FileChooserDialogImpl" timestamp="1600101677885">
+      <screen x="0" y="0" width="1649" height="1143" />
+    </state>
+    <state x="605" y="327" key="FileChooserDialogImpl/0.0.1649.1143/-205.-1080.1858.1080@0.0.1649.1143" timestamp="1600101677885" />
+  </component>
+</project>

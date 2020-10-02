@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="eeacfb5b-8052-4e1b-a058-b087490db43c" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="1i8p1Vd8iK4GCTDIPSWWa77zqfo" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="eeacfb5b-8052-4e1b-a058-b087490db43c" name="Default Changelist" comment="" />
+      <created>1601298859095</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1601298859095</updated>
+      <workItem from="1601298860385" duration="194000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="605" y="314" key="FileChooserDialogImpl" timestamp="1601299044624">
+      <screen x="0" y="0" width="1649" height="1143" />
+    </state>
+    <state x="605" y="314" key="FileChooserDialogImpl/0.0.1649.1143/-205.-1080.1858.1080@0.0.1649.1143" timestamp="1601299044624" />
+    <state x="334" y="217" key="SettingsEditor" timestamp="1601298947388">
+      <screen x="0" y="0" width="1649" height="1143" />
+    </state>
+    <state x="334" y="217" key="SettingsEditor/0.0.1649.1143/-205.-1080.1858.1080@0.0.1649.1143" timestamp="1601298947388" />
+  </component>
+</project>

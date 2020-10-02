@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8aaa856b-3523-4fae-9c69-0b466638f5f6" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1hW0lIOXRCvLntIVm39pUQqlUFH" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8aaa856b-3523-4fae-9c69-0b466638f5f6" name="Default Changelist" comment="" />
+      <created>1600111689733</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1600111689733</updated>
+      <workItem from="1600111690901" duration="42047000" />
+      <workItem from="1600350302060" duration="94000" />
+      <workItem from="1600687546143" duration="1881000" />
+      <workItem from="1600783034154" duration="2574000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="605" y="327" key="FileChooserDialogImpl" timestamp="1600693473433">
+      <screen x="0" y="0" width="1649" height="1143" />
+    </state>
+    <state x="605" y="327" key="FileChooserDialogImpl/0.0.1649.1143/-205.-1080.1858.1080@0.0.1649.1143" timestamp="1600693473433" />
+    <state x="334" y="217" key="SettingsEditor" timestamp="1600274704703">
+      <screen x="0" y="0" width="1649" height="1143" />
+    </state>
+    <state x="334" y="217" key="SettingsEditor/0.0.1649.1143/-205.-1080.1858.1080@0.0.1649.1143" timestamp="1600274704703" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/data/delivery-data.js</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

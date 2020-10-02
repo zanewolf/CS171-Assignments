@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>CS171 - HW2</title>
+
+		<!-- Load CSS libraries -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+		<!-- own CSS -->
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<h1>Pizza is Here!</h1>
+		<hr style="width:100%;text-align:center; color: black; border-width: 3px;">
+		<div>
+			<p>
+			This dataset represents the total pizza delivered to the Greater Boston Area during the last week of January 2016. Feel free to explore!
+			</p>
+		</div>
+	<!--drop down menu forms-->
+		<div class="row justify-content-center">
+			<div class="align-self-center">
+				<div class="user-control">
+					<div class="form-row" >
+						<div class="col">
+							<select style="width:auto;" id="location-category" class="form-control" onchange="createVisualization()">
+								<option value="all">All Locations</option>
+								<option value="Boston">Boston</option>
+								<option value="Cambridge">Cambridge</option>
+								<option value="Somerville">Somerville</option>
+							</select>
+						</div>
+						<div class="col" >
+							<select style="width:auto;" id="order-category" class="form-control" onchange="createVisualization()">
+								<option value="all">All Orders</option>
+								<option value="web">Web Orders</option>
+								<option value="phone">Phone Orders</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	<!--data table-->
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<table class="table table-striped">
+						<thead>
+						<tr style="text-align: center;">
+							<th scope="col" colspan = 2 >DELIVERY DATA</th>
+							<th scope="col" colspan = 2>FEEDBACK DATA</th>
+						</tr>
+						</thead>
+						<tbody>
+						<tr>
+							<th scope="col">Total Pizzas Delivered</th>
+							<td scope="col" id="pizzdelivs"></td>
+							<th scope="col">Total Feedback Entries</th>
+							<td scope="col" id="numfeedback"></td>
+						</tr>
+						<tr>
+							<th scope="col">Total Deliveries</th>
+							<td scope="col"id="alldelivs"></td>
+							<th scope="col" class="subcat">Low Quality</th>
+							<td scope="col" id="numlowcat"></td>
+						</tr>
+						<tr>
+							<th scope="col">Average Delivery Time</th>
+							<td scope="col" id="avgdelivtime"></td>
+							<th scope="col" class="subcat">Medium Quality</th>
+							<td scope="col" id="nummedcat"></td>
+						</tr>
+						<tr>
+							<th scope="col">Total Sales ($)</th>
+							<td scope="col" id="totalsales"></td>
+							<th scope="col" class="subcat">High Quality</th>
+							<td scope="col" id="numhighcat"></td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+
+	<!--bar chart-->
+		<div id="chart-area">
+			<div id="tooltip" class="hidden">
+				<p id="value"></p>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<table id="rawData" class="table table-striped sortable">
+						<thead>
+						<tr style="text-align: center;">
+							<th scope="col">ID</th>
+							<th scope="col">AREA</th>
+							<th scope="col">TIME [min]</th>
+							<th scope="col">DRIVER</th>
+							<th scope="col">#PIZZA</th>
+							<th scope="col">PUNCTUALITY</th>
+							<th scope="col">QUALITY</th>
+							<th scope="col">WRONG PIZZA</th>
+						</tr>
+						</thead>
+						<tbody id="tbody">
+
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+
+
+	<!-- embedding JS libraries -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+	<!-- d3 -->
+	<script src="https://d3js.org/d3.v6.min.js"></script>
+
+	<!-- data -->
+	<script src="data/delivery-data.js"></script>
+	<script src="data/feedback-data.js"></script>
+
+	<!-- bar chart -->
+	<script src="js/barchart.js"></script>
+
+	<!-- sortable -->
+	<script src="js/sortable.js"></script>
+
+	<!-- ****** TODO: FILTER DATA, DISPLAY BAR CHART & KEY FIGURES ****** -->
+	<script src="js/main.js"></script>
+	</body>
+</html>
