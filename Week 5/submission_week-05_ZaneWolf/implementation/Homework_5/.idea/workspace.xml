@@ -11,15 +11,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="81b9e939-4e64-4fad-b610-ca0bfadca5e3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/data/shelter.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Week 4/submission_week-04_ZaneWolf/implementation/hw/.idea/hw.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Week 4/submission_week-04_ZaneWolf/implementation/hw/.idea/hw.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Week 4/submission_week-04_ZaneWolf/implementation/hw/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Week 4/submission_week-04_ZaneWolf/implementation/hw/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../Week 4/submission_week-04_ZaneWolf/implementation/hw/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Week 4/submission_week-04_ZaneWolf/implementation/hw/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Week 4/submission_week-04_ZaneWolf/implementation/hw/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Week 4/submission_week-04_ZaneWolf/implementation/hw/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +45,7 @@
       <updated>1601469878013</updated>
       <workItem from="1601469879240" duration="15745000" />
       <workItem from="1601586197144" duration="13528000" />
+      <workItem from="1601650833833" duration="657000" />
     </task>
     <servers />
   </component>
@@ -67,6 +62,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="548" y="374" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601586893846">
