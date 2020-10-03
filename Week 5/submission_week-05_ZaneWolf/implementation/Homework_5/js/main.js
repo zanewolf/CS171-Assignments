@@ -136,8 +136,6 @@ function drawLineChart(data) {
         .attr("dy", ".15em")
         .attr("transform", "rotate(-65)");
 
-
-
     // Add y axis
     let yScale = d3.scaleLinear()
         .domain([0, d3.max(data, d => d.population)+0.05*d3.max(data, d => d.population)])
