@@ -1,4 +1,5 @@
-//define Margins
+// define margins
+// wanted the area chart to be a bit bigger than the bar chart area, so two widths and heights were defined
 let margin = {
         top: 0,
         right: 35,
@@ -11,14 +12,15 @@ let margin = {
 
 let maxCapacity = 100000; //gotta get rid of those magic numbers, yaknow. already have too many of them.
 
+// defining reused colors
 let mydarkgreen = "#38686A";
 let mypale = "#CDC6AE";
 let myred = "#AF0514";
 
-//define shelter data
+// define shelter data
 let shelterData = [{shelter: "Caravans", percentage: 79.68},{shelter: "Combination", percentage: 10.81}, {shelter: "Tents", percentage: 9.51}];
 
-//define svg area of LINE CHART using said margins
+// define svg area of LINE CHART using said margins
 let svg = d3.select("#linechart")
     .append("svg")
     .attr("width", width1 + margin.left + margin.right)
@@ -26,7 +28,7 @@ let svg = d3.select("#linechart")
     .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-//define svg area of BAR CHART using said margins
+// define svg area of BAR CHART using said margins
 let svg2 = d3.select("#barchart")
     .append("svg")
     .attr("width", width2 + margin.left + margin.right)
@@ -38,7 +40,7 @@ let svg2 = d3.select("#barchart")
 let parseTime= d3.timeParse("%Y-%m-%d");
 
 
-//journey to the promise land
+// journey to the promise land
 d3.csv("data/zaatari-refugee-camp-population.csv", row => {
 
     row.population = +row.population;
@@ -56,7 +58,7 @@ d3.csv("data/zaatari-refugee-camp-population.csv", row => {
 function drawBarChart(data){
     let padding = 30;
 
-    // Add X Axis
+    // Add x axis
     let xBarScale = d3.scaleBand()
         .range([ 0, width2 ])
         .domain(data.map(function(d) { return d.shelter; }))
@@ -69,7 +71,7 @@ function drawBarChart(data){
             .tickSize(0))
         .select(".domain").remove(); //remove the x-axis line
 
-    // Add Y Axis
+    // Add y axis
     let yBarScale = d3.scaleLinear()
         .domain([0, 100])
         .range([height2-2*padding, 3*padding]);
@@ -87,6 +89,7 @@ function drawBarChart(data){
         .text("Percent (%)")
     svg2.select(".domain").remove();
 
+    // draw the bars
     svg2.selectAll("rect.rect")
         .data(data)
         .enter()
@@ -100,6 +103,7 @@ function drawBarChart(data){
         .attr("stroke", mydarkgreen)
         .attr("stroke-width", "4");
 
+    // add the bar labels
     svg2.selectAll('rect.tag')
         .data(data)
         .enter()
@@ -117,7 +121,7 @@ function drawLineChart(data) {
 
     let padding = 30;
 
-    // Add X Axis
+    // Add x axis
     let xScale = d3.scaleTime()
         .domain([d3.min(data, d => d.date), d3.max(data, d => d.date)])
         .range([padding, width1 - padding]);
@@ -134,7 +138,7 @@ function drawLineChart(data) {
 
 
 
-    // Add Y Axis
+    // Add y axis
     let yScale = d3.scaleLinear()
         .domain([0, d3.max(data, d => d.population)+0.05*d3.max(data, d => d.population)])
         // .range([padding,height - padding]);
@@ -157,7 +161,7 @@ function drawLineChart(data) {
             .y(d => yScale(d.population))
         );
 
-    // Add Area Component
+    // add the area component
     svg.append("path")
         .datum(data)
         .attr("class", "area")
@@ -167,10 +171,12 @@ function drawLineChart(data) {
             .y0(yScale(0))
             .y1(d => yScale(d.population)))
 
+    // add the tooltip component
     const mytooltip = svg.append("g")
         .attr("class", "mytooltip")
         .style("display", "none");
 
+    // generate the 'linear' gradient for coloration
     svg.append("linearGradient")
         .attr("id", "pop-gradient")
         .attr("gradientUnits", "userSpaceOnUse")
@@ -186,7 +192,8 @@ function drawLineChart(data) {
         .attr("offset", function(d) { return d.offset; })
         .attr("stop-color", function(d) { return d.color; });
 
-    //would you believe it, I got this almost completely right on the first try. Just had to fiddle with the x values a bit.
+    // would you believe it, I got this almost completely right on the first try. Just had to fiddle with the x values a bit.
+    // add the max capacity line
     svg.append("line")
         .attr("class", "maxcapacity")
         .style("stroke", myred)
@@ -251,6 +258,7 @@ function drawLineChart(data) {
         .attr("dy", "1em");
 
     // debugging this was a bitch and a half.
+    // drawing the tooltip over the area chart
     function mousemove(event){
         let x0 = xScale.invert(d3.pointer(event, this)[0]);
         let bisectDate = d3.bisector(d=> d.date).left;
@@ -262,7 +270,7 @@ function drawLineChart(data) {
         let formatDate = d3.timeFormat("%d-%b");
 
 
-        //replace translation height with 3*padding to maintain fixed height rather than changing
+        // replace translation height with 3*padding to maintain fixed height rather than changing
         mytooltip.select("text.y1")
             .attr("transform",
                 "translate(" + xScale(d.date) + "," +
