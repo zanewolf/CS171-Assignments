@@ -11,8 +11,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="81b9e939-4e64-4fad-b610-ca0bfadca5e3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../../Week 6/submission_week-06_ZaneWolf/implementation/Lab/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../Week 6/submission_week-06_ZaneWolf/implementation/Lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Week 6/submission_week-06_ZaneWolf/implementation/Lab/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
+=======
+      <change beforePath="$PROJECT_DIR$/../../../../Week 6/submission_week-06_ZaneWolf/implementation/Lab/Activity_1/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Week 6/submission_week-06_ZaneWolf/implementation/Lab/Activity_1/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Week 6/submission_week-06_ZaneWolf/implementation/Lab/Activity_1/js/main - copy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Week 6/submission_week-06_ZaneWolf/implementation/Lab/Activity_1/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Week 6/submission_week-06_ZaneWolf/implementation/Lab/Activity_1/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Week 6/submission_week-06_ZaneWolf/implementation/Lab/Activity_2/data/.~lock.coffee-house-chains.csv#" beforeDir="false" />
+>>>>>>> 06aab85d0d31796accc22cbf43c05fc0f64834e3
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +55,8 @@
       <workItem from="1601469879240" duration="15745000" />
       <workItem from="1601586197144" duration="13528000" />
       <workItem from="1601650833833" duration="15784000" />
-      <workItem from="1601898798819" duration="1114000" />
+      <workItem from="1601898798819" duration="2242000" />
+      <workItem from="1601901401200" duration="1458000" />
     </task>
     <servers />
   </component>

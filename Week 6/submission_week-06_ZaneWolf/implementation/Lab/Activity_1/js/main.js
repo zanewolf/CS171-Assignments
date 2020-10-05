@@ -7,6 +7,7 @@ let margin = {
 let width = $("#chart-area").width() - margin.left - margin.right, //$("#myCOLID").width() to make it adaptable to screen width/height rather than hardcoding
     height = $("#chart-area").width() - margin.top - margin.bottom;
 
+
 // defining reused colors
 // let mydarkgreen = "#38686A";
 // let mypale = "#CDC6AE";
@@ -19,6 +20,7 @@ let svg = d3.select("#chart-area")
     .attr("height", height + margin.top + margin.bottom)
     .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
 
 //define new functions here
 // // define time parser
@@ -52,8 +54,9 @@ svg.append('text')
     .attr('dy', '.35em');
 
 
-function updateVisualization(orders) {
 
+function updateVisualization(orders) {
+    
     // console.log(orders);
     // Data-join (circle now contains the update selection)
     let circle = svg.selectAll("circle")
@@ -77,6 +80,7 @@ function updateVisualization(orders) {
 
     //update label
     updateLabel(orders.length); //having finished, probably unnecessary to make this another function, but c'est la vie
+
 }
 
 function updateLabel(length){
