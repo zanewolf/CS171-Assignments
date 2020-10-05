@@ -12,6 +12,7 @@
   <component name="ChangeListManager">
     <list default="true" id="81b9e939-4e64-4fad-b610-ca0bfadca5e3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Week 6/submission_week-06_ZaneWolf/implementation/Lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Week 6/submission_week-06_ZaneWolf/implementation/Lab/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +90,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/js/main.js</url>
           <line>2</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
