@@ -5,13 +5,8 @@ let margin = {
     bottom: 20,
     left: 20};
 let width = $("#chart-area").width() - margin.left - margin.right, //$("#myCOLID").width() to make it adaptable to screen width/height rather than hardcoding
-    height = $("#chart-area").width() - margin.top - margin.bottom;
+    height = $("#chart-area").height() - margin.top - margin.bottom;
 
-
-// defining reused colors
-// let mydarkgreen = "#38686A";
-// let mypale = "#CDC6AE";
-// let myred = "#AF0514";
 
 // define svg area using said margins
 let svg = d3.select("#chart-area")
@@ -22,31 +17,6 @@ let svg = d3.select("#chart-area")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 
-//define new functions here
-// // define time parser
-// let parseTime= d3.timeParse("%Y-%m-%d");
-
-// import data and set up promise
-// d3.csv("data/coffee-house-chains.csv", row => {
-//
-// 	// transform string parameters to numerical or date, if need be.
-// 	row.stores = +row.stores;
-// 	row.revenue = +row.revenue;
-// 	return row;
-//
-// }).then(function(data){
-//
-// 	//sort data and call visualization functions here
-// 	console.log(data);
-// 	// updateVisualization(data);
-//
-//
-// });
-
-// define drawing functions here
-// The function is called every time when an order comes in or an order gets processed
-// The current order queue is stored in the variable 'orders'
-
 svg.append('text')
     .attr('class', 'label')
     .attr('x', width/2)
@@ -56,7 +26,7 @@ svg.append('text')
 
 
 function updateVisualization(orders) {
-    
+
     // console.log(orders);
     // Data-join (circle now contains the update selection)
     let circle = svg.selectAll("circle")
