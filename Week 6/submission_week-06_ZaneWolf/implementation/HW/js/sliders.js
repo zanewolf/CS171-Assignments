@@ -206,6 +206,7 @@ function slider(orientation, scale) {
                 return transformAlong(scale(d.value));
             })
             .attr('font-family', 'sans-serif')
+            .attr('font-size', '20pt')
             .attr(
                 'text-anchor',
                 orientation === right
@@ -322,7 +323,7 @@ function slider(orientation, scale) {
         if (displayValue) {
             handleEnter
                 .append('text')
-                .attr('font-size', 10) // TODO: Remove coupling to font-size in d3-axis
+                .attr('font-size', "40pt") // TODO: Remove coupling to font-size in d3-axis
                 .attr(y, k * (24 + tickPadding))
                 .attr(
                     'dy',
@@ -878,3 +879,4 @@ export function sliderBottom(scale) {
 
 export function sliderLeft(scale) {
     return slider(left, scale);
+}

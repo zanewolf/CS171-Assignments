@@ -6,59 +6,122 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>CS171 - HW 5</title>
 
+
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
+
+
 </head>
 <body>
+		<div class="container">
+			<div id="header" class="row">
+				<div class = "col-sm" class="site-logo">
+					<img src="images/FIFA_logo_colored.svg" alt="logo">
+				</div>
+				<div class="col-md-8 myheaders">
+					<h1>FIFA World Cup<sup>TM</sup></h1>
+					<h2 id = "subtitle">All Time Statistics</h2>
+				</div>
 
-	<div class="container">
 
-		<h1>FIFA World Cup<sup>TM</sup></h1>
-		<h2>All Time Statistics</h2>
-
-
-
-		<div class="row align-items-center">
-			<div class="col-sm">
-				<form class="form-inline">
-					<div class="form-group">
-						<label form="variable-type">Choose Data </label>
-						<select class="form-control" id="var-type">
-							<option label = "Goals" id = "GOALS" value="GOALS">Goals</option>
-							<option label = "Avg. Goals" id = "AVERAGE_GOALS" value="AVERAGE_GOALS">Average Goals</option>
-							<option label = "Matches" id = "MATCHES" value="MATCHES">Matches</option>
-							<option label = "Teams" id = "TEAMS" value="TEAMS">Teams</option>
-							<option label = "Avg. Attendance" id = "AVERAGE_ATTENDANCE" value="AVERAGE_ATTENDANCE">Average Attendance</option>
-						</select>
-					</div>
-				</form>
 			</div>
+
+<hr color="#C3FF0B">
 
 			<div class="row align-items-center">
-				<div class="col-sm"><p id="startdate">1930-2014</p></div>
-				<div class="col-md"><div id="slider-range"></div></div>
+				<div class="col-sm">
+					<form class="form-inline">
+						<div class="form-group">
+							<label form="variable-type">Choose Data </label>
+							<select class="form-control" id="var-type">
+								<option label = "Goals" id = "GOALS" value="GOALS">Goals</option>
+								<option label = "Avg. Goals" id = "AVERAGE_GOALS" value="AVERAGE_GOALS">Average Goals</option>
+								<option label = "Matches" id = "MATCHES" value="MATCHES">Matches</option>
+								<option label = "Teams" id = "TEAMS" value="TEAMS">Teams</option>
+								<option label = "Avg. Attendance" id = "AVERAGE_ATTENDANCE" value="AVERAGE_ATTENDANCE">Average Attendance</option>
+							</select>
+						</div>
+					</form>
+				</div>
+
+	<!--			<div class="row align-items-center">-->
+	<!--				<div class="col">-->
+	<!--					<div id="slider"></div>-->
+	<!--					<div id="slider1"></div>-->
+	<!--				</div>-->
+
+	<!--			</div>-->
+
+				<div class="row align-items-center">
+					<div class="col-sm"><p id="startdate">1930-2014</p></div>
+					<div class="col-md"><div id="slider-range"></div></div>
+				</div>
 			</div>
+
+			<!-- Parent container for the visualization -->
+			<div class = "row  align-items-center">
+				<div class="col">
+					<div id="chart-area"></div>
+				</div>
+				<div class="col" id="info-area">
+					<div class="row align-items-end">
+						<div class="col-md"> <h2 id = "fifayear">1930 FIFA World Cup Uruguay</h2></div>
+					</div>
+					<hr color="##1B2661">
+					<div class="row  align-items-center">
+						<div class="col-sm">
+							<h3>WINNER</h3>
+						</div>
+						<div id = "fifawinner" class="col-sm info">
+							Uruguay
+						</div>
+					</div>
+					<div class="row align-items-center">
+						<div class="col-sm">
+							<h3>GOALS</h3>
+						</div>
+						<div id = "fifagoals" class="col-sm info">
+							70
+						</div>
+					</div>
+					<div class="row align-items-center">
+						<div class="col-sm">
+							<h3>AVG. GOALS</h3>
+						</div>
+						<div id = "fifaavggoals" class="col-sm info">
+							3.9
+						</div>
+					</div>
+					<div class="row  align-items-center">
+						<div class="col-sm">
+							<h3>MATCHES</h3>
+						</div>
+						<div id = "fifamatches" class="col-sm info">
+							18
+						</div>
+					</div>
+					<div class="row  align-items-center">
+						<div class="col-sm">
+							<h3>TEAMS</h3>
+						</div>
+						<div id = "fifateams" class="col-sm info">
+							13
+						</div>
+					</div>
+					<div class="row align-items-center">
+						<div class="col-sm">
+							<h3>ATTENDANCE</h3>
+						</div>
+						<div id = "fifaattend" class="col-sm info">
+							32808
+						</div>
+					</div>
+				</div>
+			</div>
+
+
 		</div>
-<!--		<div class="github">-->
-<!--			<a href="https://github.com/evoluteur/d3-dual-range-slider">d3-dual-range-slider</a><br/><br/>-->
-<!--			<iframe src="https://ghbtns.com/github-btn.html?user=evoluteur&repo=d3-dual-range-slider&type=star&count=true&size=small" frameborder="0" scrolling="0" width="100px" height="30px"></iframe>-->
-<!--		</div>-->
-<!--		<div id="slider-container"></div>-->
-<!--		<div id="range-label">YEAR to YEAR</div>-->
-
-<!--		<script type="text/javascript">-->
-<!--			var slider = createD3RangeSlider(0, 100, "#slider-container");-->
-
-<!--			slider.onChange(function(newRange){-->
-<!--				d3.select("#range-label").text(newRange.begin + " - " + newRange.end);-->
-<!--			});-->
-
-<!--			slider.range(0,10);-->
-<!--		</script>-->
-
-		<!-- Parent container for the visualization -->
-		<div id="chart-area"></div>
-
 	</div>
 
 
@@ -70,7 +133,6 @@
 	<script src="js/d3.min.js"></script>
 	<script src="js/d3-tip.js"></script>
 	<script src="https://unpkg.com/d3-simple-slider"></script>
-
 	<!-- Your implementation -->
 	<script src="js/main.js"></script>
 </body>

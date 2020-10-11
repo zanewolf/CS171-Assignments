@@ -1,9 +1,9 @@
 
 // SVG drawing area
 
-let margin = {top: 40, right: 40, bottom: 60, left: 60};
+let margin = {top: 40, right: 40, bottom: 60, left: 30};
 
-let width = 700 - margin.left - margin.right,
+let width = 650 - margin.left - margin.right,
 		height = 500 - margin.top - margin.bottom;
 
 let svg = d3.select("#chart-area").append("svg")
@@ -36,11 +36,9 @@ var yAxis = svg.append("g")
 //define magic numbers
 var transtime = 800;
 
-var sliderRange= d3
-		.sliderBottom()
-		.width(400);
 var gRange = d3
 	.select('div#slider-range')
+	.attr("class", "gRange")
 	.append('svg')
 	.attr('width', 500)
 	.attr('height', 100)
@@ -54,11 +52,10 @@ loadData();
 // FIFA world cup
 let data;
 
-var newDates = [1930,2014];
+// define initial variables
+var newDates = [new Date(-1262286000000), new Date( 1388552400000)]
 var selectedVariable;
 var selectedLabel;
-toggle = false;
-
 
 // Load CSV file
 function loadData() {
@@ -80,9 +77,6 @@ function loadData() {
 		data = csv;
 
 		// Draw the visualization for the first time
-
-
-
 		updateVisualization("GOALS", "Goals", newDates);
 
 	});
@@ -92,56 +86,60 @@ function loadData() {
 // Render visualization
 function updateVisualization(selectedVariable, selectedLabel, newDates) {
 
-	let selectedData = data.map(function(d){return {name: d.EDITION, date: d.YEAR, value: d[selectedVariable]}});
-	console.log(selectedData);
+	let newData = data.map(function(d){return {name: d.EDITION, date: d.YEAR, value: d[selectedVariable], winner: d.WINNER, matches: d.MATCHES, attend: d.AVERAGE_ATTENDANCE, avggoals: d.AVERAGE_GOALS, teams:d.TEAMS, goals: d.GOALS }});
+	console.log(newData);
+	// filter data set and redraw plot
+	var  selectedData = newData.filter(function(d) {
+		return ((d.date >= newDates[0]) && (d.date <= newDates[1]))
+	})
+	console.log(newData);
 	let padding = 30;
 
 	// define Slider
 
-	//I couldn't get this quite right and at this point, I've been working on it for 5 hours. I'm done.
-	sliderRange
+	//This took me 6 hours to get the slider to work. It shouldn't have taken 6 hours. Idk why it wasn't working, and then idk why it started. Which I know is normal, but regardless, fuck this slider.
+	var sliderRange=d3
+		.sliderBottom()
+		.width(400)
 		.tickFormat(d3.timeFormat("%Y"))
-		.step(1000*60*60*24*366*4)
-		.min(d3.min(selectedData, d=>d.date))
-		.max(d3.max(selectedData, d=>d.date))
-		.default([d3.min(selectedData, d=>d.date),d3.max(selectedData, d=>d.date)])
-		.fill('#2196f3')
-		.on('onchange', function(val){
-			newDates = val.map(d3.timeFormat("%Y")).join(",").split(",").map(Number);
+		.step(1000*60*60*24*365.25*4)
+		.min(d3.min(newData, d=>d.date))
+		.max(d3.max(newData, d=>d.date))
+		.ticks(8)
+		.default([d3.min(newData, d=>d.date),d3.max(newData, d=>d.date)])
+		.fill('#C3FF0B')
+		.on('onchange', function(val) {
+			newDates=[new Date(val[0]), new Date(val[1])];
+			console.log(val)
 			d3.select('p#startdate').text(val.map(d3.timeFormat("%Y")).join("-"));
-			// updateVisualization(selectedVariable, selectedLabel, newDates);
-			// calling this messed up both how the scale was drawn (the fill wouldn't track the max slider) and the graph went all to hell. Oh well.
+			updateVisualization(selectedVariable, selectedLabel, newDates);
 		});
 
 	gRange.call(sliderRange);
 
 
-	// define X scale
-	// console.log(typeof d3.min(newDates));
-	// x.domain([newDates[0], newDates[1]]);
-	x.domain([d3.min(selectedData, d=>d.date), d3.max(selectedData, d=>d.date)])
-	// console.log(x(1974));
+	d3.select('p#value-range')
+		.text(
+			sliderRange
+				.value()
+				.map(d3.format('.2%'))
+				.join('-'))
+		.style("font", "25pt");
 
+
+	// define X scale
+	x.domain([d3.min(newDates), d3.max(newDates)])
 
 	// define Y scale
 	y.domain([d3.min(selectedData, d=> d.value), d3.max(selectedData, d=>d.value)]);
 
-	// define slider
-
+	// define tooltip
 	var tooltip = d3.select("body")
 		.append("div")
 		.attr('class', 'tooltip')
 		.style("position", "absolute")
 		.style("visibility", "hidden")
 		.style("opacity", 0.9);
-
-
-	// d3.select('p#start-range').text(
-	// 	sliderRange
-	// 		.value()
-	// 		.join('-')
-	// );
-
 
 	// define line
 	let line = svg.selectAll(".line")
@@ -152,15 +150,17 @@ function updateVisualization(selectedVariable, selectedLabel, newDates) {
 		.append("path")
 		.merge(line)
 		.datum(selectedData)
-		.attr("class", "line")
 		.transition()
 		.duration(transtime)
+		.attr("class", "line")
 		.attr("d", d3.line()
 			.x(d=> x(d.date))
 			.y(d=> y(d.value))
 		);
 
+
 	line.exit().remove();
+
 
 	// update x axis
 	svg.selectAll('.xaxis')
@@ -181,15 +181,10 @@ function updateVisualization(selectedVariable, selectedLabel, newDates) {
 		.enter()
 		.append("circle")
 		.data(selectedData)
-		.merge(circles)
-		.transition()
-		.duration(transtime)
-		.attr("class", "dot")
-		.attr("cx", d=>x(d.date))
-		.attr("cy", d=>y(d.value))
-		.attr("r", 5);
-
-	circles
+		.on("click", function(event,d){
+			console.log(d)
+			showEdition(d)
+		})
 		.on("mouseover", function(){return tooltip.style("visibility", "visible");})
 		.on('mousemove', function(event,d) {
 			tooltip.transition()
@@ -203,9 +198,14 @@ function updateVisualization(selectedVariable, selectedLabel, newDates) {
 				.style("left", (event.pageX)+25+"px")
 		})
 		.on("mouseout", function(){return tooltip.style("visibility", "hidden");
-		});
-
-
+		})
+		.merge(circles)
+		.transition()
+		.duration(transtime)
+		.attr("class", "dot")
+		.attr("cx", d=>x(d.date))
+		.attr("cy", d=>y(d.value))
+		.attr("r", 5)
 
 	circles.exit().remove();
 
@@ -221,8 +221,16 @@ function updateVisualization(selectedVariable, selectedLabel, newDates) {
 
 // Show details for a specific FIFA World Cup
 function showEdition(d){
-	
+	document.getElementById('fifayear').innerHTML = d.name;
+	document.getElementById("fifawinner").innerHTML = d.winner;
+	document.getElementById("fifagoals").innerHTML = d.goals;
+	document.getElementById("fifaavggoals").innerHTML = d.avggoals;
+	document.getElementById("fifamatches").innerHTML = d.matches;
+	document.getElementById("fifateams").innerHTML = d.teams;
+	document.getElementById("fifaattend").innerHTML = d.attend;
+
 }
+
 
 
 

@@ -1,8 +1,100 @@
 
 /* ADD YOUR STYLES HERE */
-/*body {*/
-/*  font-family: "Teko";*/
+body{
+  background-color: #1B2661;
+  color: white;
+}
+
+
+/*.header{*/
+/*  margin-left: 20pt;*/
+/*  margin-right: 20pt;*/
+/*  text-align: end;*/
 /*}*/
+h1{
+  font-family: "Teko";
+  color: #C3FF0B;
+  font-size: 60pt;
+  margin-top: 20pt;
+}
+
+h2,h3{
+  font-family: "Teko";
+  color: #1B2661;
+}
+
+.myheaders{
+}
+
+#subtitle{
+  color: white;
+}
+
+#header, img{
+  /*margin-bottom: -50pt;*/
+  /*align-content: center;*/
+  text-align: center;
+}
+img {
+  /*margin-top: 10pt;*/
+  margin-left: 100pt;
+  margin-top: 20pt;
+  height: 75%;
+}
+h2{
+  font-size: 30pt;
+  margin-top: 10pt;
+  text-align: center;
+}
+h3{
+  text-align: left;
+  margin-left: 30pt;
+  font-size: 24pt;
+}
+
+.info{
+  font-family: "Teko";
+  color: #1B2661;
+  text-align: right;
+  margin-right: 50pt;
+  font-size: 16pt;
+
+}
+
+
+
+#info-area{
+
+  width: 400px;
+  height: 400px;
+  /*padding: 10px;*/
+  border: 5px solid #C3FF0B ;
+  background-color: white;
+  margin-bottom: 10px;
+
+}
+
+.form-inline{
+  margin-left: 50pt;
+  font-family: "Teko";
+}
+
+.form-group label{
+  padding: 5pt;
+  margin-top: 5pt;
+  font-size: 30pt;
+}
+
+.form-control option{
+  font-size:16pt;
+}
+
+#startdate{
+  font-family: "Teko";
+  font-size:26pt;
+  margin-top: 10pt;
+}
+
 
 /****************/
 /*  LINE CHART  */
@@ -10,22 +102,30 @@
 
 .axis path,
 .axis line {
+
   fill: none;
   stroke: #000;
   shape-rendering: crispEdges;
 }
 .axis text {
-  font-size: 11px;
+  font-size: 20pt;
 }
-
 .line {
   fill: none;
-  stroke: #1C9A3D;
+  stroke: #C3FF0B;
   stroke-width: 1.5px;
 }
 
 .tooltip-circle {
-  fill: #96AB96;
+  fill: #C3FF0B;
+}
+
+.dot{
+  fill: #C3FF0B;
+  stroke: #C3FF0B;
+}
+.dot:hover{
+  fill: #41B0F0;
 }
 
 
@@ -39,33 +139,47 @@
   font-weight: 600;
 }
 
-.d3-tip {
-  line-height: 1;
-  padding: 12px;
-  background: rgba(0, 0, 0, 0.8);
-  color: #fff;
-  border-radius: 2px;
+.tooltip{
+  font-family: Teko;
+  font-size:16pt;
+  color: #1B2661;
+  width: 250px;
+  height:80px;
+  padding: 10px;
+  /*border: 4px;*/
+  /*border-style: solid;*/
+  /*border-color: #C3FFOB;*/
+  background-color: white;
+  margin: 0;
 }
 
-/* Creates a small triangle extender for the tooltip */
-.d3-tip:after {
-  box-sizing: border-box;
-  display: inline;
-  font-size: 10px;
-  width: 100%;
-  line-height: 1;
-  color: rgba(0, 0, 0, 0.8);
-  content: "\25BC";
-  position: absolute;
-  text-align: center;
-}
+/*.d3-tip {*/
+/*  line-height: 1;*/
+/*  padding: 12px;*/
+/*  background-color: rgba(0, 0, 0, 0.8);*/
+/*  color: red;*/
+/*  border-radius: 2px;*/
+/*}*/
 
-/* Style northward tooltips differently */
-.d3-tip.n:after {
-  margin: -1px 0 0 0;
-  top: 100%;
-  left: 0;
-}
+/*!* Creates a small triangle extender for the tooltip *!*/
+/*.d3-tip:after {*/
+/*  box-sizing: border-box;*/
+/*  display: inline;*/
+/*  font-size: 10px;*/
+/*  width: 100%;*/
+/*  line-height: 1;*/
+/*  color: rgba(0, 0, 0, 0.8);*/
+/*  content: "\25BC";*/
+/*  position: absolute;*/
+/*  text-align: center;*/
+/*}*/
+
+/*!* Style northward tooltips differently *!*/
+/*.d3-tip.n:after {*/
+/*  margin: -1px 0 0 0;*/
+/*  top: 100%;*/
+/*  left: 0;*/
+/*}*/
 
 /*********************/
 /*  SLIDER OVERLAY  */
@@ -73,10 +187,12 @@
 
 
 .slider-container {
-  background-color: #f2f2f9;
+  background-color: #fff;
 }
 
 .slider {
+  font-family: "Teko";
+  color: white;
   position: absolute;
   border: 1px solid #AAB;
   background: #BCE;
@@ -98,7 +214,9 @@
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
+
 }
+
 
 .slider .EE {
   right: -4px;
@@ -126,4 +244,34 @@
   stroke: #AAB;
   stroke-width: 1;
 }
+
+.slider .tick{
+  font-size: 20pt;
+  color: white;
+}
+
+.slider text{
+  font-family: "Teko";
+  font-size: 34px;
+  fill: white;
+}
+
+#slider-simple text{
+
+  font-size: 24px;
+  color: white;
+
+}
+
+/*.parameter-value path{*/
+/*  fill:white;*/
+/*  stroke:white;*/
+/*  stroke-width:1.5px;*/
+/*  color: white;*/
+/*}*/
+/*.parameter-value path:focus{*/
+/*  fill: white;*/
+/*  stroke:white;*/
+/*  stroke-width:3px;*/
+/*}*/
 
