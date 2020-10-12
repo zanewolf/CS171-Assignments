@@ -97,7 +97,7 @@ function updateVisualization(selectedVariable, selectedLabel, newDates) {
 
 	// define Slider
 
-	//This took me 6 hours to get the slider to work. It shouldn't have taken 6 hours. Idk why it wasn't working, and then idk why it started. Which I know is normal, but regardless, fuck this slider.
+	//This took me 7 hours to get the slider to work. It shouldn't have taken 6 hours. Idk why it wasn't working, and then idk why it did. Which I know is normal, but regardless, fuck this slider.
 	var sliderRange=d3
 		.sliderBottom()
 		.width(400)
