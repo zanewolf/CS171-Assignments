@@ -20,14 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="18ab9ba7-a59c-413b-89a6-4181111969fa" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../../../Week 4/submission_week-04_ZaneWolf/implementation/Lab_05/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Week 4/submission_week-04_ZaneWolf/implementation/Lab_05/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Week 4/submission_week-04_ZaneWolf/implementation/hw/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Week 4/submission_week-04_ZaneWolf/implementation/hw/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Week 7/submission_week-07_ZaneWolf/implementation/lab/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Week 7/submission_week-07_ZaneWolf/implementation/lab/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Week 7/submission_week-07_ZaneWolf/implementation/lab/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Week 7/submission_week-07_ZaneWolf/implementation/lab/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Week 7/submission_week-07_ZaneWolf/implementation/lab/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Week 7/submission_week-07_ZaneWolf/implementation/lab/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Week 7/submission_week-07_ZaneWolf/implementation/lab/js/stackedAreaChart.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Week 7/submission_week-07_ZaneWolf/implementation/lab/js/stackedAreaChart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Week 7/submission_week-07_ZaneWolf/implementation/lab/js/timeline.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Week 7/submission_week-07_ZaneWolf/implementation/lab/js/timeline.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Week 7/submission_week-07_ZaneWolf/implementation/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Week 7/submission_week-07_ZaneWolf/implementation/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +65,7 @@
       <option name="presentableId" value="Default" />
       <updated>1602336966909</updated>
       <workItem from="1602336968347" duration="56279000" />
-      <workItem from="1602587935924" duration="2196000" />
+      <workItem from="1602587935924" duration="2849000" />
     </task>
     <servers />
   </component>
