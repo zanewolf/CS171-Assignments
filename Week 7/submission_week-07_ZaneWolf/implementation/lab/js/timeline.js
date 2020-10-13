@@ -59,8 +59,30 @@ class Timeline {
 			.attr("d", vis.area);
 
 		  // TO-DO: Initialize brush component
+		// Initialize brush component
+		vis.brush = d3.brushX()
+			.extent([[0, 0], [vis.width, vis.height]])
+			.on("brush", brushed);
 
-        // TO-DO: Append brush component here
+
+		// Initialize time scale (x-axis)
+		vis.xScale = d3.scaleTime()
+			.range([0, vis.width])
+			.domain(d3.extent(vis._displayData, function(d) { return d.Year; }));
+
+		// Append brush component
+		vis.svg.append("g")
+			.attr("class", "x brush")
+			.call(vis.brush)
+			.selectAll("rect")
+			.attr("y", -6)
+			.attr("height", vis.height + 7);
+
+		vis.svg.append("defs").append("clipPath")
+			.attr("id", "clip")
+			.append("rect")
+			.attr("width", vis.width)
+			.attr("height", vis.height);
 
 
 		// Append x-axis

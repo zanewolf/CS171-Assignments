@@ -43,6 +43,9 @@ constructor(parentElement, data) {
 
 		vis.width = $('#' + vis.parentElement).width() - vis.margin.left - vis.margin.right;
 		vis.height = $('#' + vis.parentElement).height() - vis.margin.top - vis.margin.bottom;
+		// vis.width = 800 - vis.margin.left - vis.margin.right;
+		// vis.height = 600 - vis.margin.top - vis.margin.bottom;
+
 
 
 		// SVG drawing area
@@ -81,23 +84,41 @@ constructor(parentElement, data) {
 		vis.svg.append("g")
 			.attr("class", "y-axis axis");
 
+
 	
 			// TO-DO (Activity II): Initialize stack layout
+		let stack = d3.stack()
+			.keys(vis.dataCategories);
 
             // TO-DO (Activity II) Stack data
+		vis.stackedData = stack(vis.data);
 
-        
 
             // TO-DO (Activity II) Stacked area layout
-            // vis.area = d3.area()
-            //	...
+		vis.area = d3.area()
+			.curve(d3.curveCardinal)
+			.x(d => vis.x(d.data.Year))
+			.y0(d => vis.y(d[0]))
+			.y1(d => vis.y(d[1]))
+
+
 
 
             // TO-DO (Activity IV): Add Tooltip placeholder
+		vis.svg.append("g")
+			.append("text")
+			.attr("class", "categories")
+			.style("opacity", 0.8)
+			.style("top", vis.margin.left+20+"px")
+			.style("left",vis.margin.top+20+"px")
+			.style("z-index", "10000");
+
+
+
 
 
             // TO-DO: (Filter, aggregate, modify data)
-            // vis.wrangleData();
+		vis.wrangleData();
 
 	}
 
@@ -141,6 +162,13 @@ constructor(parentElement, data) {
 				return vis.colorScale(d)
 			})
 			.attr("d", d => vis.area(d))
+			.on("click", function(event,d){
+				console.log("clicked!");
+				console.log(d.key);
+				vis.svg.selectAll(".categories")
+					.text(d.key);
+
+			});
             
             
             // TO-DO (Activity IV): update tooltip text on hover
@@ -151,5 +179,40 @@ constructor(parentElement, data) {
 		// Call axis functions with the new domain
 		vis.svg.select(".x-axis").call(vis.xAxis);
 		vis.svg.select(".y-axis").call(vis.yAxis);
+		// vis.svg.select(".categories")
+		// 	.append("text");
+		// vis.svg.select(".area").call(vis.area);
+		vis.svg
+			.selectAll(".area")
+			.data(vis.stackedData)
+			.enter()
+			.append('path')
+			.attr("class", "area")
+			.attr("d", vis.area)
+
 	}
+}
+
+function wrap(text, width) {
+	text.each(function() {
+		var text = d3.select(this),
+			words = text.text().split(/\s+/).reverse(),
+			word,
+			line = [],
+			lineNumber = 0,
+			lineHeight = 1.1, // ems
+			y = text.attr("y"),
+			dy = parseFloat(text.attr("dy")),
+			tspan = text.text(null).append("tspan").attr("x", 0).attr("y", y).attr("dy", dy + "em");
+		while (word = words.pop()) {
+			line.push(word);
+			tspan.text(line.join(" "));
+			if (tspan.node().getComputedTextLength() > width) {
+				line.pop();
+				tspan.text(line.join(" "));
+				line = [word];
+				tspan = text.append("tspan").attr("x", 0).attr("y", y).attr("dy", lineHeight + "em").text(word);
+			}
+		}
+	});
 }

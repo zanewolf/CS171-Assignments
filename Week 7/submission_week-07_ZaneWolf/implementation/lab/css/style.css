@@ -5,6 +5,28 @@ body {
   background-color: #f7f7f7;
   text-align: center;
 }
+.mybox{
+  margin-top: 5vh;
+  border: thin solid grey;
+  border-radius: 5px;
+  background: rgba(221, 221, 221, 0.45);
+
+}
+.title{
+  height: 15vh;
+}
+.align-self-center{
+  height: 100%;
+  width: 100%;
+}
+
+#stacked-area-chart{
+  height: 60vh;
+}
+
+#timeline {
+  height: 15vh;
+}
 
 h1 {
   font-weight: 100;

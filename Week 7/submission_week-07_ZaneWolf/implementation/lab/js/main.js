@@ -13,10 +13,22 @@ function loadData() {
         let data = prepareDataForStudents(jsonData)
         
         console.log('data loaded ')
+		// console.log(data)/**/
 
         // TO-DO (Activity I): instantiate visualization objects
+		areachart = new StackedAreaChart("stacked-area-chart", data.layers);
+		// console.log(something)
+		// console.log(data.layers)
 
         // TO-DO (Activity I):  init visualizations
+		areachart.initVis();
+
+		timechart = new Timeline("timeline", data.years);
+		timechart.initVis();
+
+
+
+
         
     });
 }
@@ -52,6 +64,13 @@ function prepareDataForStudents(data){
 
 
 function brushed() {
+	// Get the extent of the current brush
+	let selectionRange = d3.brushSelection(d3.select(".brush").node());
 
-	// TO-DO: React to 'brushed' event
+	// Convert the extent into the corresponding domain values
+	let selectionDomain = selectionRange.map(timechart.xScale.invert);
+
+	areachart.x.domain(selectionDomain)
+	areachart.wrangleData();
+
 }

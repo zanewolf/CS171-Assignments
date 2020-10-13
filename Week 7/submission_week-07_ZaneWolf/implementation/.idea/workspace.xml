@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6119dcae-758c-4d27-a560-95b752c545f7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../Week 4/submission_week-04_ZaneWolf/implementation/Lab_05/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Week 4/submission_week-04_ZaneWolf/implementation/Lab_05/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Week 4/submission_week-04_ZaneWolf/implementation/hw/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Week 4/submission_week-04_ZaneWolf/implementation/hw/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Week 6/submission_week-06_ZaneWolf/implementation/HW/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Week 6/submission_week-06_ZaneWolf/implementation/HW/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/lab/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/lab/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab/js/stackedAreaChart.js" beforeDir="false" afterPath="$PROJECT_DIR$/lab/js/stackedAreaChart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab/js/timeline.js" beforeDir="false" afterPath="$PROJECT_DIR$/lab/js/timeline.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="1inIy4tyRqY0yu8FVBcpTgSRdYB" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Week 6/submission_week-06_ZaneWolf/implementation/HW" />
+    <property name="settings.editor.selected.configurable" value="liveEdit" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6119dcae-758c-4d27-a560-95b752c545f7" name="Default Changelist" comment="" />
+      <created>1602537179900</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1602537179900</updated>
+      <workItem from="1602537181556" duration="18236000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="605" y="327" key="FileChooserDialogImpl" timestamp="1602587929284">
+      <screen x="0" y="0" width="1649" height="1143" />
+    </state>
+    <state x="605" y="327" key="FileChooserDialogImpl/0.0.1649.1143/-205.-1080.1858.1080@0.0.1649.1143" timestamp="1602587929284" />
+    <state x="334" y="217" key="SettingsEditor" timestamp="1602537855237">
+      <screen x="0" y="0" width="1649" height="1143" />
+    </state>
+    <state x="334" y="217" key="SettingsEditor/0.0.1649.1143/-205.-1080.1858.1080@0.0.1649.1143" timestamp="1602537855237" />
+    <state x="431" y="-941" width="585" height="801" key="find.popup" timestamp="1602601371859">
+      <screen x="-205" y="-1080" width="1858" height="1080" />
+    </state>
+    <state x="431" y="-941" width="585" height="801" key="find.popup/0.0.1649.1143/-205.-1080.1858.1080@-205.-1080.1858.1080" timestamp="1602601371859" />
+  </component>
+</project>
