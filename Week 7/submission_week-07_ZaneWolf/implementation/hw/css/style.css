@@ -1,2 +1,20 @@
 
 /* ADD YOUR STYLES HERE */
+.align-self-center{
+    height: 100%;
+    width: 100%;
+}
+
+.title {
+    height: 20vh;
+}
+
+#barcol{
+    height: 80vh;
+    width: 48vw;
+}
+
+#histogram-chart{
+    height: 50vh;
+    width: 45vw;
+}

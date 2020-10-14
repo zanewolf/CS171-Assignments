@@ -20,10 +20,6 @@ class BarChart {
 
 		this.initVis();
 	}
-
-
-
-
 	/*
 	 * Initialize visualization (static content; e.g. SVG area, axes)
 	 */
@@ -32,7 +28,56 @@ class BarChart {
 		let vis = this;
 
 
-		// * TO-DO *
+		vis.margin = {top: 5, right: 5, bottom: 5, left: 5};
+
+		vis.width = $('#' + vis.parentElement).width() - vis.margin.left - vis.margin.right;
+		vis.height = $('#' + vis.parentElement).height() - vis.margin.top - vis.margin.bottom;
+		// vis.width = 300 - vis.margin.left - vis.margin.right;
+		// vis.height = 150 - vis.margin.top - vis.margin.bottom;
+
+
+		// SVG drawing area
+		vis.svg = d3.select("#" + vis.parentElement).append("svg")
+			.attr("width", vis.width + vis.margin.left + vis.margin.right)
+			.attr("height", vis.height + vis.margin.top + vis.margin.bottom)
+			.append("g")
+			.attr("transform", "translate(" + vis.margin.left + "," + vis.margin.top + ")");
+
+
+		// Scales and axes
+		// define Y axis as categorical and X as linear, since it's quantitative
+		vis.y = d3.scaleBand()
+			.range([0, vis.height])
+			.domain(d3.extent(vis.data, d=> d.config));
+
+		vis.x = d3.scaleLinear()
+			.range([0, vis.width]);
+
+		vis.xAxis = d3.axisBottom()
+			.scale(vis.x);
+
+		vis.yAxis = d3.axisLeft()
+			.scale(vis.y);
+
+		vis.svg.append("g")
+			.attr("class", "x-axis axis")
+			.attr("transform", "translate(0," + vis.height + ")");
+
+		vis.svg.append("g")
+			.attr("class", "y-axis axis");
+
+		vis.bars = vis.svg.selectAll(".bar")
+			.data(vis.data)
+			.enter()
+			.append("rect")
+			.attr("class", "bar")
+			.attr("x", vis.x(0) )
+			.attr("y", function(d) { return vis.y(d.config); })
+			.attr("width", function(d) { return vis.x(d[0]); })
+			.attr("height", vis.y.bandwidth() )
+			.attr("fill", "#2D3319")
+
+		console.log("here");
 
 
 		// (Filter, aggregate, modify data)
@@ -79,6 +124,16 @@ class BarChart {
 
 		// Update the y-axis
 		vis.svg.select(".y-axis").call(vis.yAxis);
+        vis.svg.select(".x-axis").call(vis.xAxis);
+        vis.svg
+            .selectAll(".bar")
+            .data(vis.data)
+            .enter()
+            .append('rect')
+            .attr("class", "bar")
+            .attr("d", vis.bar)
+
+
 	}
 
 

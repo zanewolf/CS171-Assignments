@@ -20,9 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a1a11fd-29f1-4aa4-b0c0-81cf957f4eec" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../hw/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hw/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Week 7/submission_week-07_ZaneWolf/implementation/lab/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Week 7/submission_week-07_ZaneWolf/implementation/lab/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Week 7/submission_week-07_ZaneWolf/implementation/lab/js/stackedAreaChart.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Week 7/submission_week-07_ZaneWolf/implementation/lab/js/stackedAreaChart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Week 6/submission_week-06_ZaneWolf/implementation/HW/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Week 6/submission_week-06_ZaneWolf/implementation/HW/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Week 7/submission_week-07_ZaneWolf/implementation/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Week 7/submission_week-07_ZaneWolf/implementation/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Week 7/submission_week-07_ZaneWolf/implementation/hw/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Week 7/submission_week-07_ZaneWolf/implementation/hw/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Week 7/submission_week-07_ZaneWolf/implementation/hw/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Week 7/submission_week-07_ZaneWolf/implementation/hw/js/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +54,7 @@
       <updated>1601299058182</updated>
       <workItem from="1601299059282" duration="172000" />
       <workItem from="1602588025269" duration="45000" />
+      <workItem from="1602635062739" duration="123000" />
     </task>
     <servers />
   </component>
@@ -69,6 +71,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="605" y="327" key="FileChooserDialogImpl" timestamp="1602588047643">
