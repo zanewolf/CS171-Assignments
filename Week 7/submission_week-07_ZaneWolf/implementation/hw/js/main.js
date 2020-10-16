@@ -26,11 +26,18 @@ d3.csv("data/household_characteristics.csv"). then(csv=>{
 	data = csv;
 
 	// create the bar chart objects
-	bar1 = new BarChart("bar1", data, 'ownrent');
-	bar2 = new BarChart("bar2", data, 'electricity');
-	bar3 = new BarChart("bar3", data, 'hohreligion');
-	bar4 = new BarChart("bar4", data, 'latrine');
-
+	// configs.forEach()
+	configs.forEach(function(d,i){
+		barname = "bar_"+configs[i].key;
+		label = "bar"+i;
+		// console.log(label);
+		barcharts[i]=new BarChart(label, data, configs[i].key, configs[i].title);
+	});
+	// bar1 = new BarChart("bar1", data, 'ownrent');
+	// bar2 = new BarChart("bar2", data, 'electricity');
+	// bar3 = new BarChart("bar3", data, 'hohreligion');
+	// bar4 = new BarChart("bar4", data, 'latrine');
+	console.log(barcharts);
 	areachart = new AreaChart("histogram-chart", data);
 });
 
@@ -42,20 +49,19 @@ function brushed() {
 	// Get the extent of the current brush
 	let selectionRange = d3.brushSelection(d3.select(".brush").node());
 
+	console.log(selectionRange);
 	// Convert the extent into the corresponding domain values
 	let selectionDomain = selectionRange.map(areachart.xScale.invert);
 
+	// console.log("d "+selectionDomain);
 
 	// I feel like there's a better way to do this but right now I'm too tired to actually remove the hardcoding
 	// and implement it. probably something like moving the config variables to an array and then iterating through it (forEach),
 	// creating a new barchart every time. and storing the names of the new barcharts in another object, so I could
 	// call it here. And I could create the divs for the barcharts in the same function, rather than hardcode them
 	// in the html so that if we decided to plot 3 or 6 variables, it wouldn't be an issue
+	barcharts.forEach(d=>d.selectionChanged(selectionDomain));
 
-	bar1.selectionChanged(selectionDomain);
-	bar2.selectionChanged(selectionDomain);
-	bar3.selectionChanged(selectionDomain);
-	bar4.selectionChanged(selectionDomain);
 
 
 }

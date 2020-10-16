@@ -11,11 +11,12 @@
 
 class BarChart {
 
-	constructor(parentElement, data, config) {
+	constructor(parentElement, data, config, title) {
 		this.parentElement = parentElement;
 		this.data = data;
 		this.config = config;
 		this.displayData = data;
+		this.title = title;
 
 		// console.log(this.displayData);
 
@@ -29,7 +30,7 @@ class BarChart {
 		let vis = this;
 
 
-		vis.margin = {top: 5, right: 50, bottom: 5, left: 130};
+		vis.margin = {top: 30, right: 50, bottom: 5, left: 130};
 
 		vis.width = $('#' + vis.parentElement).width() - vis.margin.left - vis.margin.right;
 		vis.height = $('#' + vis.parentElement).height() - vis.margin.top - vis.margin.bottom;
@@ -75,6 +76,13 @@ class BarChart {
 			.append("text")
 			.attr("class", "values");
 
+		//Title
+		vis.svg.append("text")
+			.attr("x", vis.width/2 )
+			.attr("class", "vistitle")
+			.attr("y", -10)
+			.style("text-anchor", "middle")
+			.text(this.title);
 
 
 
@@ -97,7 +105,7 @@ class BarChart {
 
 		// (2) Sort columns descending
 		vis.sorted=vis.arrayed.sort(function(a,b){return d3.descending(a.value, b.value)});
-		console.log(vis.sorted);
+		// console.log(vis.sorted);
 
 		// Option to remove the NAs
 		// vis.displayData=vis.displayData.filter(d=>d.key!=="NA");
@@ -119,7 +127,7 @@ class BarChart {
 		// (1) Update domains
 		vis.y
 			.domain(vis.sorted.map(d=>d.key))
-			.padding(0.1);
+			.padding(0.3);
 		vis.x.domain([0, d3.max(vis.sorted, d=>d.value)]);
 
 		vis.svg.select(".y-axis")

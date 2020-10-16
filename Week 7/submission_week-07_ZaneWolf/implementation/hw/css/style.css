@@ -36,10 +36,10 @@ h3{
     /*margin-right: 5%;*/
 }
 
-#bar1, #bar2, #bar3, #bar4{
-    height: 13vh;
+#bar0, #bar2, #bar3, #bar1{
+    height: 15vh;
     width: 50vw;
-    margin-bottom: 30pt;
+    margin-bottom: 10pt;
     color: #7ADFBB;
 
 }
@@ -62,3 +62,9 @@ h3{
 /*#x-axis.tick line{*/
 /*    visibility: hidden*/
 /*}*/
+.vistitle{
+    fill: #7ADFBB;
+    stroke: none;
+    font-size: 16pt;
+
+}
