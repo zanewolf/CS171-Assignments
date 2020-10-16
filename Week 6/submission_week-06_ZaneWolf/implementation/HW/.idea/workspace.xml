@@ -19,17 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="18ab9ba7-a59c-413b-89a6-4181111969fa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../../Week 3/submission_ZaneWolf/hw/implementation/HW3_Pizza/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Week 3/submission_ZaneWolf/hw/implementation/HW3_Pizza/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Week 3/submission_ZaneWolf/hw/implementation/HW3_Pizza/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Week 7/submission_week-07_ZaneWolf/implementation/hw/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Week 7/submission_week-07_ZaneWolf/implementation/hw/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Week 7/submission_week-07_ZaneWolf/implementation/hw/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Week 7/submission_week-07_ZaneWolf/implementation/hw/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Week 7/submission_week-07_ZaneWolf/implementation/hw/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Week 7/submission_week-07_ZaneWolf/implementation/hw/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Week 7/submission_week-07_ZaneWolf/implementation/hw/js/barchart.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Week 7/submission_week-07_ZaneWolf/implementation/hw/js/barchart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Week 7/submission_week-07_ZaneWolf/implementation/hw/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Week 7/submission_week-07_ZaneWolf/implementation/hw/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Week 7/submission_week-07_ZaneWolf/implementation/lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Week 7/submission_week-07_ZaneWolf/implementation/lab/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="18ab9ba7-a59c-413b-89a6-4181111969fa" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
