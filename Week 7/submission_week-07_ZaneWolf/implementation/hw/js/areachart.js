@@ -26,7 +26,7 @@ class AreaChart {
 	initVis() {
 		let vis = this;
 
-		vis.margin = {top: 100, right: 5, bottom:5, left: 50};
+		vis.margin = {top: 10, right: 5, bottom:100, left: 75};
 
 		vis.width = $('#' + vis.parentElement).width() - vis.margin.left - vis.margin.right;
 		vis.height = $('#' + vis.parentElement).height() - vis.margin.top - vis.margin.bottom;
@@ -86,13 +86,14 @@ class AreaChart {
 			.call(vis.brush)
 			.selectAll("rect")
 			.attr("y", -6)
-			.attr("height", vis.height + 7);
+			.attr("height", vis.height + 12);
 
-		// vis.svg.append("defs").append("clipPath")
-		// 	.attr("id", "clip")
-		// 	.append("rect")
-		// 	.attr("width", vis.width)
-		// 	.attr("height", vis.height);
+		vis.svg.append("defs").append("clipPath")
+			.attr("id", "clip")
+			.append("rect")
+			.attr("width", vis.width)
+			.attr("height", vis.height)
+			.attr("z-index", "10000");
 
 		// (Filter, aggregate, modify data)
 		vis.wrangleData();
@@ -106,22 +107,11 @@ class AreaChart {
 	wrangleData() {
 		let vis = this;
 
-		// (1) Group data by date and count survey results for each day
-		// (2) Sort data by day
-
 		vis.rolled= d3.rollup(vis.data, v=> v.length, d=>+d.survey);
 		vis.data=Array.from(vis.rolled, ([key, value]) => ({key, value}));
-		//
-		// var parseDate = d3.timeParse("%Y-%m-%d");
-		//
-		// // convert keys to date objects
-		// vis.data.forEach(function(d,i){
-		// 	vis.data[i].key= parseDate(vis.data[i].key);
-		// });
 
 		// sort dates
 		vis.data.sort(function(a,b){return d3.ascending(a.key, b.key)});
-		// console.log(vis.data);
 
 		// Update the visualization
 		vis.updateVis();
@@ -141,8 +131,16 @@ class AreaChart {
 		vis.xScale.domain(d3.extent(vis.data, d=> d.key));
 		vis.y.domain([0, d3.max(vis.data, d=> d.value)]);
 
-		vis.svg.select(".x-axis").call(vis.xAxis);
-		vis.svg.select(".y-axis").call(vis.yAxis);
+		vis.svg.select(".x-axis")
+			.call(vis.xAxis
+				.tickFormat(d3.timeFormat("%Y-%m-%d"))
+				.tickSize(5))
+			.selectAll("text")
+			.attr("dx", "-2em")
+			.attr("dy", "1em")
+			.attr("transform", "rotate(-45)");
+
+		vis.svg.select(".y-axis").call(vis.yAxis.tickSize(0).ticks(11));
 
 		vis.svg
 			.append("g")
@@ -150,7 +148,8 @@ class AreaChart {
 			.datum(vis.data)
 			.attr("class", "area")
 			.attr("d", vis.area)
-			.attr("fill", "blue");
+			.attr("fill", "#7ADFBB")
+			.attr("opacity", "0.85");
 
 	}
 }

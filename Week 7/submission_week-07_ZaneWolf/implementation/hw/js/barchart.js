@@ -29,7 +29,7 @@ class BarChart {
 		let vis = this;
 
 
-		vis.margin = {top: 5, right: 50, bottom: 5, left: 100};
+		vis.margin = {top: 5, right: 50, bottom: 5, left: 130};
 
 		vis.width = $('#' + vis.parentElement).width() - vis.margin.left - vis.margin.right;
 		vis.height = $('#' + vis.parentElement).height() - vis.margin.top - vis.margin.bottom;
@@ -51,7 +51,7 @@ class BarChart {
 			.range([0, vis.height]);
 
 		vis.x = d3.scaleLinear()
-			.range([0, vis.width]);
+			.range([0, vis.width-50]);
 
 		vis.xAxis = d3.axisBottom()
 			.scale(vis.x);
@@ -61,10 +61,11 @@ class BarChart {
 
 		vis.svg.append("g")
 			.attr("class", "x-axis axis")
-			.attr("transform", "translate(0," + vis.height + ")");
+			.attr("transform", "translate(," + vis.height + ")");
 
 		vis.svg.append("g")
-			.attr("class", "y-axis axis");
+			.attr("class", "y-axis axis")
+			.attr("transform", "translate(-5,0)");
 
 		//Bars
 		vis.svg.append("g")
@@ -124,11 +125,17 @@ class BarChart {
 		vis.svg.select(".y-axis")
 			// .transition()
 			// .duration(300)
-			.call(vis.yAxis);
+			.call(vis.yAxis
+				.tickSize(0))
+			.select(".domain").remove();
 		vis.svg.select(".x-axis")
 			// .transition()
 			// .duration(300)
-			.call(vis.xAxis);
+			.call(vis.xAxis
+				.tickSize(0)
+				.tickValues([]))
+			.select(".domain").remove()
+		;
 
 
 		// (2) Draw rectangles
@@ -145,7 +152,7 @@ class BarChart {
 			.attr("width", function(d) { return vis.x(d.value); })
 			.attr("fill", "#69b3a2")
 			.transition()
-			.duration(100)
+			.duration(500)
 			.attr("x", 0 );
 
 		vis.rect.exit().remove();
@@ -165,11 +172,12 @@ class BarChart {
 			.attr("y", function(d){return (vis.y(d.key)+vis.y.bandwidth()/1.5);})
 			.text(d=>d.value)
 			.transition()
-			.duration(100)
-
-;
+			.duration(500);
 
 		vis.barsLabel.exit().remove();
+
+		// add titles
+
 
 	}
 

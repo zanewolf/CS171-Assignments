@@ -28,8 +28,6 @@
       <change beforePath="$PROJECT_DIR$/../../../../Week 7/submission_week-07_ZaneWolf/implementation/hw/js/barchart.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Week 7/submission_week-07_ZaneWolf/implementation/hw/js/barchart.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../Week 7/submission_week-07_ZaneWolf/implementation/hw/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Week 7/submission_week-07_ZaneWolf/implementation/hw/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../Week 7/submission_week-07_ZaneWolf/implementation/lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Week 7/submission_week-07_ZaneWolf/implementation/lab/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Week 7/submission_week-07_ZaneWolf/implementation/lab/css/fontawesome.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Week 7/submission_week-07_ZaneWolf/implementation/lab/css/fontawesome.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Week 7/submission_week-07_ZaneWolf/implementation/lab/js/stackedAreaChart.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Week 7/submission_week-07_ZaneWolf/implementation/lab/js/stackedAreaChart.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +53,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../Week 5/submission_week-05_ZaneWolf/implementation/Homework_5" />
     <property name="settings.editor.selected.configurable" value="preferences.pathVariables" />
   </component>
   <component name="RecentsManager">
@@ -75,7 +73,7 @@
       <workItem from="1602336968347" duration="56279000" />
       <workItem from="1602587935924" duration="2854000" />
       <workItem from="1602637826053" duration="31000" />
-      <workItem from="1602848941051" duration="1215000" />
+      <workItem from="1602848941051" duration="1827000" />
     </task>
     <servers />
   </component>
@@ -99,9 +97,10 @@
       <screen x="0" y="0" width="1649" height="1143" />
     </state>
     <state x="555" y="319" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1649.1143/-205.-1080.1858.1080@0.0.1649.1143" timestamp="1602437176396" />
-    <state x="605" y="327" key="FileChooserDialogImpl" timestamp="1602587979232">
+    <state x="605" y="327" key="FileChooserDialogImpl" timestamp="1602868031639">
       <screen x="0" y="0" width="1649" height="1143" />
     </state>
+    <state x="605" y="327" key="FileChooserDialogImpl/0.0.1649.1143/-1920.242.1858.1080@0.0.1649.1143" timestamp="1602868031639" />
     <state x="605" y="327" key="FileChooserDialogImpl/0.0.1649.1143/-205.-1080.1858.1080@0.0.1649.1143" timestamp="1602587979232" />
     <state x="334" y="217" key="SettingsEditor" timestamp="1602433174972">
       <screen x="0" y="0" width="1649" height="1143" />

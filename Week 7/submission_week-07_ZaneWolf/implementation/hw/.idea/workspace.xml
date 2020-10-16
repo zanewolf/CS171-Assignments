@@ -31,8 +31,6 @@
       <change beforePath="$PROJECT_DIR$/js/barchart.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/barchart.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lab/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab/css/fontawesome.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/../lab/css/fontawesome.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab/js/stackedAreaChart.js" beforeDir="false" afterPath="$PROJECT_DIR$/../lab/js/stackedAreaChart.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +72,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602639353782</updated>
-      <workItem from="1602639354899" duration="49148000" />
+      <workItem from="1602639354899" duration="54975000" />
     </task>
     <servers />
   </component>
@@ -102,5 +100,9 @@
       <screen x="-1920" y="242" width="1858" height="1080" />
     </state>
     <state x="-1490" y="427" key="SettingsEditor/0.0.1649.1143/-1920.242.1858.1080@-1920.242.1858.1080" timestamp="1602853823853" />
+    <state x="-1391" y="388" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1602869315146">
+      <screen x="-1920" y="242" width="1858" height="1080" />
+    </state>
+    <state x="-1391" y="388" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1649.1143/-1920.242.1858.1080@-1920.242.1858.1080" timestamp="1602869315146" />
   </component>
 </project>

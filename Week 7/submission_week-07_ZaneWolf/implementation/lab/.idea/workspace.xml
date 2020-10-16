@@ -28,8 +28,6 @@
       <change beforePath="$PROJECT_DIR$/../hw/js/barchart.js" beforeDir="false" afterPath="$PROJECT_DIR$/../hw/js/barchart.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../hw/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../hw/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fontawesome.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/fontawesome.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/stackedAreaChart.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/stackedAreaChart.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +56,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602639340472</updated>
-      <workItem from="1602639341638" duration="15940000" />
+      <workItem from="1602639341638" duration="16537000" />
     </task>
     <servers />
   </component>
