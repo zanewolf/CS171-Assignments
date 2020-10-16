@@ -3,14 +3,14 @@
 /*
  * BarChart - Object constructor function
  * @param _parentElement 	-- the HTML element in which to draw the bar charts
- * @param _data						-- the dataset 'household characteristics'
- * @param _config					-- variable from the dataset (e.g. 'electricity') and title for each bar chart
- */
-// d3 = require("d3-array@2");
-// var filtered =false;
+ * @param _data				-- the dataset 'household characteristics'
+ * @param _config			-- variable from the dataset (e.g. 'electricity') and title for each bar chart
+ * @param _title 			-- read in the title of the graph
+*/
 
 class BarChart {
 
+	// I slightly modified this to also read in the title easily
 	constructor(parentElement, data, config, title) {
 		this.parentElement = parentElement;
 		this.data = data;
@@ -18,13 +18,8 @@ class BarChart {
 		this.displayData = data;
 		this.title = title;
 
-		// console.log(this.displayData);
-
 		this.initVis();
 	}
-	/*
-	 * Initialize visualization (static content; e.g. SVG area, axes)
-	 */
 
 	initVis() {
 		let vis = this;
@@ -34,8 +29,6 @@ class BarChart {
 
 		vis.width = $('#' + vis.parentElement).width() - vis.margin.left - vis.margin.right;
 		vis.height = $('#' + vis.parentElement).height() - vis.margin.top - vis.margin.bottom;
-		// vis.width = 300 - vis.margin.left - vis.margin.right;
-		// vis.height = 150 - vis.margin.top - vis.margin.bottom;
 
 
 		// SVG drawing area
@@ -90,9 +83,6 @@ class BarChart {
 		vis.wrangleData();
 	}
 
-	/*
-	 * Data wrangling
-	 */
 
 	wrangleData() {
 		let vis = this;
@@ -190,26 +180,14 @@ class BarChart {
 	}
 
 
-
-	/*
-	 * Filter data when the user changes the selection
-	 * Example for brushRegion: 07/16/2016 to 07/28/2016
-	 */
-
 	selectionChanged(brushRegion) {
 		let vis = this;
 
-		// console.log(vis.data);
 
-		// console.log(brushRegion);
-		// // Filter data accordingly without changing the original data
+		// Filter data accordingly without changing the original data
 		vis.displayData=vis.data.filter(function(d) {
 			return ((d.survey >= brushRegion[0]) && (d.survey <= brushRegion[1]))
 		});
-		// console.log(vis.displayData);
-
-		// * TO-DO *
-
 
 		// Update the visualization
 		vis.wrangleData();

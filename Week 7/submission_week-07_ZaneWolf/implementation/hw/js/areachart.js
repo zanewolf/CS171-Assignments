@@ -18,11 +18,6 @@ class AreaChart {
 
 	}
 
-
-	/*
-	 * Initialize visualization (static content; e.g. SVG area, axes, brush component)
-	 */
-
 	initVis() {
 		let vis = this;
 
@@ -30,9 +25,6 @@ class AreaChart {
 
 		vis.width = $('#' + vis.parentElement).width() - vis.margin.left - vis.margin.right;
 		vis.height = $('#' + vis.parentElement).height() - vis.margin.top - vis.margin.bottom;
-		// vis.width = 800 - vis.margin.left - vis.margin.right;
-		// vis.height = 600 - vis.margin.top - vis.margin.bottom;
-
 
 
 		// SVG drawing area
@@ -42,9 +34,6 @@ class AreaChart {
 			.append("g")
 			.attr("transform", "translate(" + vis.margin.left + "," + vis.margin.top + ")");
 
-		// Scales and axes
-		// vis.x = d3.scaleTime()
-		// 	.range([0, vis.width]);
 
 		// Initialize time scale (x-axis)
 		vis.xScale = d3.scaleTime()
@@ -78,7 +67,6 @@ class AreaChart {
 			.extent([[0, 0], [vis.width, vis.height]])
 			.on("brush", brushed);
 
-		// console.log(xScale(new Date("07-15-2016")))
 
 		// Append brush component
 		vis.svg.append("g")
@@ -100,10 +88,6 @@ class AreaChart {
 	}
 
 
-	/*
-	 * Data wrangling
-	 */
-
 	wrangleData() {
 		let vis = this;
 
@@ -118,16 +102,10 @@ class AreaChart {
 	}
 
 
-	/*
-	 * The drawing function
-	 */
-
 	updateVis() {
 		let vis = this;
 
-		// * TO-DO *
 
-		// console.log("x: "+  d3.extent(vis.data, d=> d.key));
 		vis.xScale.domain(d3.extent(vis.data, d=> d.key));
 		vis.y.domain([0, d3.max(vis.data, d=> d.value)]);
 

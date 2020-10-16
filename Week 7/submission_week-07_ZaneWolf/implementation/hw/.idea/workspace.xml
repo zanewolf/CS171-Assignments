@@ -22,7 +22,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="170c2701-41ea-484a-b47d-c797defaf97d" name="Default Changelist" comment="" />
+    <list default="true" id="170c2701-41ea-484a-b47d-c797defaf97d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/areachart.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/areachart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/barchart.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/barchart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,7 +68,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602639353782</updated>
-      <workItem from="1602639354899" duration="58054000" />
+      <workItem from="1602639354899" duration="58411000" />
     </task>
     <servers />
   </component>

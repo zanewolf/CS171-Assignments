@@ -19,7 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ee2b34b9-a19d-4440-a0be-0564b142b563" name="Default Changelist" comment="" />
+    <list default="true" id="ee2b34b9-a19d-4440-a0be-0564b142b563" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../hw/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../hw/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw/js/areachart.js" beforeDir="false" afterPath="$PROJECT_DIR$/../hw/js/areachart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw/js/barchart.js" beforeDir="false" afterPath="$PROJECT_DIR$/../hw/js/barchart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../hw/js/main.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
