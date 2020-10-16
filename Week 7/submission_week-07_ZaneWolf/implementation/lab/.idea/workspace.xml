@@ -20,22 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ee2b34b9-a19d-4440-a0be-0564b142b563" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../../Week 4/submission_week-04_ZaneWolf/implementation/lab/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hw/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hw/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Week 4/submission_week-04_ZaneWolf/implementation/Lab_05/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Week 4/submission_week-04_ZaneWolf/implementation/Lab_05/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Week 4/submission_week-04_ZaneWolf/implementation/hw/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Week 4/submission_week-04_ZaneWolf/implementation/hw/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Week 4/submission_week-04_ZaneWolf/implementation/lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Week 4/submission_week-04_ZaneWolf/implementation/lab/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Week 5/submission_week-05_ZaneWolf/implementation/Lab_05/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Week 5/submission_week-05_ZaneWolf/implementation/Lab_05/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../Week 6/submission_week-06_ZaneWolf/implementation/HW/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Week 6/submission_week-06_ZaneWolf/implementation/HW/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hw/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../hw/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../hw/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../hw/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../hw/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../hw/js/areachart.js" beforeDir="false" afterPath="$PROJECT_DIR$/../hw/js/areachart.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../hw/js/barchart.js" beforeDir="false" afterPath="$PROJECT_DIR$/../hw/js/barchart.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../hw/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../hw/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fontawesome.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/fontawesome.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/stackedAreaChart.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/stackedAreaChart.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +58,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602639340472</updated>
-      <workItem from="1602639341638" duration="356000" />
+      <workItem from="1602639341638" duration="15940000" />
     </task>
     <servers />
   </component>
@@ -81,5 +75,11 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="536" y="273" width="576" height="596" key="find.popup" timestamp="1602848024890">
+      <screen x="0" y="0" width="1649" height="1143" />
+    </state>
+    <state x="536" y="273" width="576" height="596" key="find.popup/0.0.1649.1143/-1920.242.1858.1080@0.0.1649.1143" timestamp="1602848024890" />
   </component>
 </project>

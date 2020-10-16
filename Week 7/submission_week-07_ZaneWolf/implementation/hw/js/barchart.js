@@ -6,7 +6,8 @@
  * @param _data						-- the dataset 'household characteristics'
  * @param _config					-- variable from the dataset (e.g. 'electricity') and title for each bar chart
  */
-
+// d3 = require("d3-array@2");
+// var filtered =false;
 
 class BarChart {
 
@@ -16,7 +17,7 @@ class BarChart {
 		this.config = config;
 		this.displayData = data;
 
-		console.log(this.displayData);
+		// console.log(this.displayData);
 
 		this.initVis();
 	}
@@ -28,7 +29,7 @@ class BarChart {
 		let vis = this;
 
 
-		vis.margin = {top: 5, right: 5, bottom: 5, left: 5};
+		vis.margin = {top: 5, right: 50, bottom: 5, left: 100};
 
 		vis.width = $('#' + vis.parentElement).width() - vis.margin.left - vis.margin.right;
 		vis.height = $('#' + vis.parentElement).height() - vis.margin.top - vis.margin.bottom;
@@ -47,8 +48,7 @@ class BarChart {
 		// Scales and axes
 		// define Y axis as categorical and X as linear, since it's quantitative
 		vis.y = d3.scaleBand()
-			.range([0, vis.height])
-			.domain(d3.extent(vis.data, d=> d.config));
+			.range([0, vis.height]);
 
 		vis.x = d3.scaleLinear()
 			.range([0, vis.width]);
@@ -66,26 +66,20 @@ class BarChart {
 		vis.svg.append("g")
 			.attr("class", "y-axis axis");
 
-		vis.bars = vis.svg.selectAll(".bar")
-			.data(vis.data)
-			.enter()
-			.append("rect")
-			.attr("class", "bar")
-			.attr("x", vis.x(0) )
-			.attr("y", function(d) { return vis.y(d.config); })
-			.attr("width", function(d) { return vis.x(d[0]); })
-			.attr("height", vis.y.bandwidth() )
-			.attr("fill", "#2D3319")
+		//Bars
+		vis.svg.append("g")
+			.attr("class", "bar");
 
-		console.log("here");
+		vis.svg.append("g")
+			.append("text")
+			.attr("class", "values");
+
+
 
 
 		// (Filter, aggregate, modify data)
 		vis.wrangleData();
 	}
-
-
-
 
 	/*
 	 * Data wrangling
@@ -94,12 +88,19 @@ class BarChart {
 	wrangleData() {
 		let vis = this;
 
+		// console.log(vis.data);
+
 		// (1) Group data by key variable (e.g. 'electricity') and count leaves
+		vis.rolled=d3.rollup(vis.displayData, leaves=>leaves.length, d=>d[vis.config])
+		vis.arrayed=Array.from(vis.rolled, ([key, value]) => ({key, value}));
+
 		// (2) Sort columns descending
+		vis.sorted=vis.arrayed.sort(function(a,b){return d3.descending(a.value, b.value)});
+		console.log(vis.sorted);
 
-
-		// * TO-DO *
-
+		// Option to remove the NAs
+		// vis.displayData=vis.displayData.filter(d=>d.key!=="NA");
+		// console.log(vis.displayData);
 
 		// Update the visualization
 		vis.updateVis();
@@ -115,24 +116,60 @@ class BarChart {
 		let vis = this;
 
 		// (1) Update domains
+		vis.y
+			.domain(vis.sorted.map(d=>d.key))
+			.padding(0.1);
+		vis.x.domain([0, d3.max(vis.sorted, d=>d.value)]);
+
+		vis.svg.select(".y-axis")
+			// .transition()
+			// .duration(300)
+			.call(vis.yAxis);
+		vis.svg.select(".x-axis")
+			// .transition()
+			// .duration(300)
+			.call(vis.xAxis);
+
+
 		// (2) Draw rectangles
+		vis.rect = vis.svg.selectAll(".bar")
+			.data(vis.sorted, d=>d);
+
+		vis.rect
+			.enter()
+			.append('rect')
+			.attr("class", "bar")
+			.merge(vis.rect)
+			.attr("height", vis.y.bandwidth() )
+			.attr("y", function(d) { return vis.y(d.key); })
+			.attr("width", function(d) { return vis.x(d.value); })
+			.attr("fill", "#69b3a2")
+			.transition()
+			.duration(100)
+			.attr("x", 0 );
+
+		vis.rect.exit().remove();
+
+
 		// (3) Draw labels
 
+		vis.barsLabel = vis.svg.selectAll(".barlabel")
+			.data(vis.sorted);
 
-		// * TO-DO *
+		vis.barsLabel
+			.enter()
+			.append('text')
+			.attr("class", "barlabel")
+			.merge(vis.barsLabel)
+			.attr("x", function(d){return (vis.width-(vis.width-vis.x(d.value))+5);})
+			.attr("y", function(d){return (vis.y(d.key)+vis.y.bandwidth()/1.5);})
+			.text(d=>d.value)
+			.transition()
+			.duration(100)
 
+;
 
-		// Update the y-axis
-		vis.svg.select(".y-axis").call(vis.yAxis);
-        vis.svg.select(".x-axis").call(vis.xAxis);
-        vis.svg
-            .selectAll(".bar")
-            .data(vis.data)
-            .enter()
-            .append('rect')
-            .attr("class", "bar")
-            .attr("d", vis.bar)
-
+		vis.barsLabel.exit().remove();
 
 	}
 
@@ -146,8 +183,14 @@ class BarChart {
 	selectionChanged(brushRegion) {
 		let vis = this;
 
-		// Filter data accordingly without changing the original data
+		// console.log(vis.data);
 
+		// console.log(brushRegion);
+		// // Filter data accordingly without changing the original data
+		vis.displayData=vis.data.filter(function(d) {
+			return ((d.survey >= brushRegion[0]) && (d.survey <= brushRegion[1]))
+		});
+		// console.log(vis.displayData);
 
 		// * TO-DO *
 

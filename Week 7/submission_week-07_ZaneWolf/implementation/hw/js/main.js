@@ -14,7 +14,7 @@ let areachart;
 
 
 // Date parser to convert strings to date objects
-let parseDate = d3.timeParse("%Y-%m-%d");
+var parseDate = d3.timeParse("%Y-%m-%d");
 
 
 // (1) Load CSV data
@@ -25,14 +25,16 @@ let parseDate = d3.timeParse("%Y-%m-%d");
 d3.csv("data/household_characteristics.csv"). then(csv=>{
 
 	// prepare data
-	console.log(csv);
+	// console.log(csv);
 	csv.forEach(function(d){
+		//caused errors in rollup, since Date objects aren't read correctly, it wants strings
+		// will convert later
 		d.survey = parseDate(d.survey);
 	});
 
 	// Store csv data in global variable
 	data = csv;
-	console.log(data);
+	// console.log(data);
 
 	// create the bar chart objects
 	bar1 = new BarChart("bar1", data, 'ownrent');
@@ -40,17 +42,11 @@ d3.csv("data/household_characteristics.csv"). then(csv=>{
 	bar3 = new BarChart("bar3", data, 'hohreligion');
 	bar4 = new BarChart("bar4", data, 'latrine');
 
-	bar1.initVis();
-	bar2.initVis();
-	bar3.initVis();
-	bar4.initVis();
-
 	// // console.log(data)/**/
 	//
 	// // TO-DO (Activity I): instantiate visualization objects
-	// areachart = new StackedAreaChart("stacked-area-chart", data.layers);
-	// // console.log(something)
-	// // console.log(data.layers)
+	areachart = new AreaChart("histogram-chart", data);
+
 	//
 	// // TO-DO (Activity I):  init visualizations
 	// areachart.initVis();
@@ -64,7 +60,35 @@ d3.csv("data/household_characteristics.csv"). then(csv=>{
 
 // React to 'brushed' event and update all bar charts
 function brushed() {
-	
-	// * TO-DO *
+
+	// Get the extent of the current brush
+	let selectionRange = d3.brushSelection(d3.select(".brush").node());
+
+	// console.log(selectionRange);
+	// Convert the extent into the corresponding domain values
+	let selectionDomain = selectionRange.map(areachart.xScale.invert);
+
+	// console.log(areachart.xScale.invert(selectionRange[0]));;
+
+	// I feel like there's a better way to do this but right now I'm too tired to actually remove the hardcoding
+	// and implement it. probably something like moving the config variables to an array and then iterating through it (forEach),
+	// creating a new barchart every time. and storing the names of the new barcharts in another object, so I could
+	// call it here. And I could create the divs for the barcharts in the same function, rather than hardcode them
+	// in the html so that if we decided to plot 3 or 6 variables, it wouldn't be an issue
+
+	// bar1.x.domain(selectionDomain1)
+	// console.log(selectionDomain[0]);
+	// bar2.x.domain(selectionDomain2)
+	// bar3.x.domain(selectionDomain3)
+	// bar4.x.domain(selectionDomain4)
+	// bar1.wrangleData();
+	// bar2.wrangleData();
+	// bar3.wrangleData();
+	// bar4.wrangleData();
+	bar1.selectionChanged(selectionDomain);
+	bar2.selectionChanged(selectionDomain);
+	bar3.selectionChanged(selectionDomain);
+	bar4.selectionChanged(selectionDomain);
+
 
 }

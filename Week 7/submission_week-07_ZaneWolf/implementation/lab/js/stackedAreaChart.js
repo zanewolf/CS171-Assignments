@@ -99,7 +99,7 @@ constructor(parentElement, data) {
 			.curve(d3.curveCardinal)
 			.x(d => vis.x(d.data.Year))
 			.y0(d => vis.y(d[0]))
-			.y1(d => vis.y(d[1]))
+			.y1(d => vis.y(d[1]));
 
 
 
