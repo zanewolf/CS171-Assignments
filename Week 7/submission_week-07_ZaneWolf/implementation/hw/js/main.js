@@ -53,3 +53,9 @@ function brushed() {
 
 
 }
+
+// Redraw based on the new size whenever the browser window is resized.
+window.addEventListener("resize", function(d){
+	areahart.initVis()
+	barcharts.forEach(d=>d.initVis())
+});

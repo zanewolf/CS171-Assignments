@@ -33,6 +33,7 @@ class AreaChart {
 			.attr("height", vis.height + vis.margin.top + vis.margin.bottom)
 			.append("g")
 			.attr("transform", "translate(" + vis.margin.left + "," + vis.margin.top + ")");
+		
 
 
 		// Initialize time scale (x-axis)
