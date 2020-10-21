@@ -29,6 +29,7 @@ function initMainPage(allDataArray) {
 
     // activity 1, pie chart
     myPieChart = new PieChart('pieDivRight')
+    // myPieChart.initVis();
 
     // activity 2, force layout
     myMapVis = new MapVis('mapDiv', allDataArray[0], allDataArray[1])
