@@ -18,7 +18,7 @@ class PieChart {
         let vis = this;
 
         // margin conventions
-        vis.margin = {top: 10, right: 50, bottom: 10, left: 50};
+        vis.margin = {top: 10, right: 75, bottom: 10, left: 75};
         vis.width = $("#" + vis.parentElement).width() - vis.margin.left - vis.margin.right;
         vis.height = $("#" + vis.parentElement).height() - vis.margin.top - vis.margin.bottom;
 
@@ -33,7 +33,7 @@ class PieChart {
         vis.svg.append('g')
             .attr('class', 'title pie-title')
             .append('text')
-            .text('Title for Pie Chart')
+            .text('Percentage of Airports by Category')
             .attr('transform', `translate(${vis.width / 2}, 20)`)
             .attr('text-anchor', 'middle');
 
@@ -49,7 +49,6 @@ class PieChart {
         // vis.pie = d3.pie();
         vis.pie = d3.pie()
             .value(function(d){
-                console.log(d)
                 return d.value
             });
 
@@ -111,7 +110,7 @@ class PieChart {
             .attr("d", vis.arc)
             .style("fill", function(d, index) { return vis.circleColors[index]; })
             .on('mouseover', function(event, d){
-                console.log("hover");
+                // console.log("hover");
                 d3.select(this)
                     .attr('stroke-width', '2px')
                     .attr('stroke', 'black')
@@ -124,7 +123,7 @@ class PieChart {
                     .style("top", event.pageY + "px")
                     .html(`
                          <div style="border: thin solid grey; border-radius: 5px; background: lightgrey; padding: 20px">
-                             <h3>Arc with index #${d.index}<h3>
+                             <h3>Arc with index #${d.index}</h3>
                              <h4> value: ${d.value}</h4>
                              <h4> startAngle: ${d.startAngle}</h4>
                              <h4> endAngle: ${d.endAngle}</h4>
@@ -141,7 +140,7 @@ class PieChart {
                     .style("left", 0)
                     .style("top", 0)
                     .html(``);
-            });;
+            });
 
     }
 }

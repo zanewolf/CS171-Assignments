@@ -23,8 +23,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="170c2701-41ea-484a-b47d-c797defaf97d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../../Week 6/.idea/Week 6.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../Week 6/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../Week 6/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../Week 6/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../.idea/Week 7.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../Week 8/submission_week-08_ZaneWolf/implementation/lab/js/d3.legend.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Week 6/submission_week-06_ZaneWolf/implementation/Lab/Activity_1/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Week 6/submission_week-06_ZaneWolf/implementation/Lab/Activity_1/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Week 8/submission_week-08_ZaneWolf/implementation/lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Week 8/submission_week-08_ZaneWolf/implementation/lab/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Week 8/submission_week-08_ZaneWolf/implementation/lab/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Week 8/submission_week-08_ZaneWolf/implementation/lab/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../Week 8/submission_week-08_ZaneWolf/implementation/lab/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Week 8/submission_week-08_ZaneWolf/implementation/lab/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Week 8/submission_week-08_ZaneWolf/implementation/lab/js/mapVis.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Week 8/submission_week-08_ZaneWolf/implementation/lab/js/mapVis.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../Week 8/submission_week-08_ZaneWolf/implementation/lab/js/pieChart.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Week 8/submission_week-08_ZaneWolf/implementation/lab/js/pieChart.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

@@ -25,7 +25,7 @@ Promise.all(promises)
 function initMainPage(allDataArray) {
 
     // log data
-    // console.log(allDataArray);
+    console.log(allDataArray);
 
     // activity 1, pie chart
     myPieChart = new PieChart('pieDivRight')
