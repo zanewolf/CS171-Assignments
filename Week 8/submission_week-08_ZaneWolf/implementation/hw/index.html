@@ -17,7 +17,7 @@
 				<!-- HEADING -->
 				<div class="row d-flex justify-content-center" style="height: 10vh; padding: 0; background: #bdbdbd;">
 					<div class="align-self-center">
-						<h1>Brush, Map, Bars</h1>
+						<h1>The Modern-Day Plague</h1>
 					</div>
 				</div>
 
@@ -46,9 +46,9 @@
 											<div class="row" style="height: 70vh; background: lightgrey; padding: 1vh;">
 												<div id="mapDiv" style="height: 100%; width:100%; border: thin solid grey; border-radius: 5px; background: rgba(64,64,64,0.4);">
 													<!-- TODO - DELETE THE LINES BELOW -->
-													<div class="row justify-content-center" style="height: 100%; width: 100%">
-														<p class="align-self-center">TODO</p>
-													</div>
+<!--													<div class="row justify-content-center" style="height: 100%; width: 100%">-->
+<!--														<p class="align-self-center">TODO</p>-->
+<!--													</div>-->
 												</div>
 											</div>
 										</div>
@@ -70,7 +70,12 @@
 									</div>
 									<div class="col-8">
 										<div class="row justify-content-center" style="height: 100%">
-											<p class="align-self-center" >TODO</p>
+											<select id='categorySelector' class="custom-select align-self-center" style="width: 50%" onchange="categoryChange()">
+												<option value="absCases" selected>Cases (absolute)</option>
+												<option value="absDeaths">Deaths (absolute)</option>
+												<option value="relCases">Cases (relative to population)</option>
+												<option value="relDeaths">Deaths (relative to population)</option>
+											</select>
 										</div>
 									</div>
 								</div>
@@ -80,9 +85,9 @@
 							<div id="scatterDiv" class="align-self-center" style="height: 100%; width:100%; border: thin solid grey; border-radius: 5px; background: rgba(64,64,64,0.4)">
 
 								<!-- TODO - DELETE THE LINES BELOW -->
-								<div class="row justify-content-center" style="height: 100%; width: 100%">
-									<p class="align-self-center">TODO</p>
-								</div>
+<!--								<div class="row justify-content-center" style="height: 100%; width: 100%">-->
+<!--									<p class="align-self-center">TODO</p>-->
+<!--								</div>-->
 
 							</div>
 						</div>
@@ -115,6 +120,9 @@
 	<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
 	<script src="https://d3js.org/topojson.v2.min.js"></script>
 	<script src="https://d3js.org/d3-geo.v1.min.js"></script>
+<!--	<script src="https://d3js.org/d3-legend.js"></script>-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.min.js"></script>
+
 
 	<!-- OWN JS -->
 	<script src="js/helpers.js"></script>
@@ -123,5 +131,10 @@
 	<script src="js/barVis.js"></script>
 	<script src="js/brushVis.js"></script>
 	<script src="js/main.js"></script>
+	<script src="js/legend2.js"></script>
+
+
+
+
 </body>
 </html>

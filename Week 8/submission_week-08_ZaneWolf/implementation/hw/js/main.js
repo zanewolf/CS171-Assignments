@@ -36,7 +36,7 @@ function initMainPage(dataArray) {
     myDataTable = new DataTable('tableDiv', dataArray[1], dataArray[2]);
 
     // TODO - init map
-    // myMapVis = new MapVis('mapDiv', dataArray[0], ...
+    myMapVis = new MapVis('mapDiv', dataArray[0], dataArray[1], dataArray[2]);
 
     // TODO - init bars
     // myBarVisOne = new BarVis('...
@@ -44,6 +44,14 @@ function initMainPage(dataArray) {
 
     // init brush
     myBrushVis = new BrushVis('brushDiv', dataArray[1]);
+}
+
+// TODO Where to put this?
+let selectedCategory = $('#categorySelector').val();
+
+function categoryChange() {
+    selectedCategory = $('#categorySelector').val();
+    myMapVis.wrangleData(selectedCategory); // maybe you need to change this slightly depending on the name of your MapVis instance
 }
 
 

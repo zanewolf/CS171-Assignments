@@ -83,7 +83,8 @@ BrushVis.prototype.initVis = function() {
         .extent([[0, 0], [vis.width, vis.height]])
         .on("brush end", function(event){
             selectedTimeRange = [vis.x.invert(event.selection[0]), vis.x.invert(event.selection[1])];
-            myDataTable.wrangleData();
+            myDataTable.wrangleData()
+            myMapVis.wrangleData(selectedCategory);
         });
 
     // init basic data processing

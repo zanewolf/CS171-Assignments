@@ -113,7 +113,7 @@ class DataTable {
             )
         })
 
-        console.log('final data structure for myDataTable', tableObject.stateInfo);
+        // console.log('final data structure for myDataTable', tableObject.stateInfo);
 
         tableObject.updateTable()
 
