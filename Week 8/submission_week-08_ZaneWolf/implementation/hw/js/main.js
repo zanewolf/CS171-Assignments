@@ -30,7 +30,7 @@ Promise.all(promises)
 function initMainPage(dataArray) {
 
     // log data
-    console.log('check out the data', dataArray);
+    // console.log('check out the data', dataArray);
 
     // init table
     myDataTable = new DataTable('tableDiv', dataArray[1], dataArray[2]);
@@ -39,8 +39,8 @@ function initMainPage(dataArray) {
     myMapVis = new MapVis('mapDiv', dataArray[0], dataArray[1], dataArray[2]);
 
     // TODO - init bars
-    // myBarVisOne = new BarVis('...
-    // myBarVisTwo = new BarVis('...
+    myBarVisOne = new BarVis('bar1',dataArray[1], dataArray[2]);
+    // myBarVisTwo = new BarVis('bar2',
 
     // init brush
     myBrushVis = new BrushVis('brushDiv', dataArray[1]);

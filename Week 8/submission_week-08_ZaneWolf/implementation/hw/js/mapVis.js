@@ -21,8 +21,8 @@ class MapVis {
 
     initVis(){
 
-                let vis = this;
-        vis.selectedCategory = 'absCases'
+        let vis = this;
+        vis.selectedCategory = 'absCases';
 
         // set up margin conventions
         vis.margin = {top: 50, right: 20, bottom: 20, left: 20};
@@ -45,7 +45,7 @@ class MapVis {
             // .projection(vis.projection);
 
         // shoutout to robert r.
-        vis.viewpoint = {'width':975, 'height': 610};
+        vis.viewpoint = {'width':975, 'height': 1000};
         vis.zoom = vis.width/vis.viewpoint.width;
 
         vis.map = vis.svg.append("g")
@@ -72,7 +72,7 @@ class MapVis {
         vis.legend = vis.svg.append("g")
             .attr('class', 'legend')
             .attr('id', 'legend')
-            .attr('transform', `translate(${vis.margin.left}, ${vis.height - 45})`)
+            .attr('transform', `translate(${vis.margin.left}, ${vis.height - 80})`)
 
 
         this.wrangleData(vis.selectedCategory)
@@ -100,13 +100,13 @@ class MapVis {
             filteredData = vis.covidData;
         }
 
-        console.log(filteredData)
+        // console.log(filteredData)
 
         // prepare covid data by grouping all rows by state
         let covidDataByState = Array.from(d3.group(filteredData, d =>d.state), ([key, value]) => ({key, value}))
 
         // have a look
-        console.log(covidDataByState)
+        // console.log(covidDataByState)
 
         // init final data structure in which both data sets will be merged into
         vis.stateInfo = []
@@ -154,12 +154,18 @@ class MapVis {
     updateVis(){
         let vis = this;
 
+        // set up the Legend
+        // I wasted so much time getting this legend *just so*.
+
+        // remove the old legend because enter/append/update doesn't seem to want to work on this thing
         vis.svg.select('.legend').select('g').remove();
-        // set up scales here:
+
+        // added a cushion to the scale, don't mind the ugliness.
         vis.colorScale = d3.scaleSequential()
             .interpolator(d3.interpolateGnBu)
-            .domain([d3.min(vis.stateInfo, d=>d[vis.selectedCategory]),d3.max(vis.stateInfo, d=>d[vis.selectedCategory])])
+            .domain([d3.min(vis.stateInfo, d=>d[vis.selectedCategory])-d3.min(vis.stateInfo, d=>d[vis.selectedCategory])*0.05,d3.max(vis.stateInfo, d=>d[vis.selectedCategory])+d3.max(vis.stateInfo, d=>d[vis.selectedCategory])*0.15])
 
+        // *just so*
         vis.colorLegend = d3.legendColor()
             .scale(vis.colorScale)
             .orient("horizontal")
@@ -167,24 +173,37 @@ class MapVis {
             .shapePadding(20)
             .shapeWidth(60)
             .shapeHeight(20)
-            .labelOffset(15);
+            .labelOffset(15)
+
+        // *just so intensifies*
+        if (vis.selectedCategory==="absCases"){
+            vis.colorLegend.labelFormat('.2s')
+        } else if (vis.selectedCategory ==="absDeaths"){
+            vis.colorLegend.labelFormat(',.2r')
+        } else if (vis.selectedCategory ==="relCases"){
+            vis.colorLegend.labelFormat('.2')
+            // wanted to add "%" to each of these, but couldn't find a simplistic way to do it. *JUST SOOOOO*
+        } else {
+            vis.colorLegend.labelFormat('.2')
+            // ditto
+        }
 
         vis.legend
             .call(vis.colorLegend)
 
         // a second way to make a legend.
-        // it's continous, but only vertical.
-        // continuous("#scatterDiv", vis.colorScale)
+        // it's continuous, but only vertical and requires legend2.js. Wasn't worth the hassle of making sure it was placed right, so bewarned if you uncomment. O.o
+        // continuous("#mapDiv", vis.colorScale)
 
 
 
-        //
+        // making a map
         vis.states
             .attr("fill", function(d){
                 // console.log(d)
                 let myState = d.properties.name;
                 let color = ""
-                // TODO Set up lookup table?
+                // Robert suggested making a lookup table. With a bigger data set, I would. But for this, I'm fine being a brute.
                 vis.stateInfo.forEach(state=> {
                     if (state.state === myState) {
                         color =  vis.colorScale(state[vis.selectedCategory])
@@ -217,7 +236,7 @@ class MapVis {
                              <p> <strong>Absolute Cases: </strong>${myStateInfo[0].absCases}</p>
                              <p> <strong>Absolute Deaths: </strong>${myStateInfo[0].absDeaths}</p>
                              <p> <strong>Relative Cases: </strong>${myStateInfo[0].relCases.toFixed(2)}%</p>
-                             <p> <strong>Relative Deaths: </strong>${myStateInfo[0].relDeaths.toFixed(2)}%</p>    
+                             <p> <strong>Relative Deaths: </strong>${myStateInfo[0].relDeaths.toFixed(3)}%</p>    
                          </div>`);
             })
             .on('mouseout', function(event, d){

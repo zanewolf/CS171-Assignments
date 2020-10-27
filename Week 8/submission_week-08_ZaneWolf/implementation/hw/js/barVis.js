@@ -5,7 +5,10 @@
 
 class BarVis {
 
-    constructor(){
+    constructor(parentElement, covidData, usaData){
+        this.parentElement = parentElement;
+        this.covidData = covidData;
+        this.usaData = usaData;
 
         this.initVis()
     }
