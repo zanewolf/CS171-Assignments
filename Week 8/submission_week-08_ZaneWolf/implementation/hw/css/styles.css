@@ -1,4 +1,9 @@
+body{
+    background-color: #03071E;
+    color:white;
+}
 .tooltip {
+
     position: absolute;
     text-align: center;
     width: 350px;
@@ -16,4 +21,14 @@
 
 .table {
     font-size: 0.7em;
+    color: white;
 }
+
+.label{
+    stroke:white;
+}
+
+.title {
+    stroke: white;
+}
+

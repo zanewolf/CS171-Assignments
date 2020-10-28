@@ -39,7 +39,7 @@ BrushVis.prototype.initVis = function() {
     vis.svg.append('g')
         .attr('class', 'title')
         .append('text')
-        .text('Title for Timeline')
+        .text('COVID Timeline')
         .attr('transform', `translate(${vis.width/2}, 20)`)
         .attr('text-anchor', 'middle');
 
@@ -83,8 +83,10 @@ BrushVis.prototype.initVis = function() {
         .extent([[0, 0], [vis.width, vis.height]])
         .on("brush end", function(event){
             selectedTimeRange = [vis.x.invert(event.selection[0]), vis.x.invert(event.selection[1])];
-            myDataTable.wrangleData()
+            myDataTable.wrangleData();
             myMapVis.wrangleData(selectedCategory);
+            myBarVisOne.wrangleData(selectedCategory);
+            myBarVisTwo.wrangleData(selectedCategory);
         });
 
     // init basic data processing
@@ -181,16 +183,16 @@ BrushVis.prototype.updateVis = function() {
     vis.pathOne.datum(vis.preProcessedData)
         .transition().duration(400)
         .attr("d", vis.area)
-        .attr("fill", "#428A8D")
-        .attr("stroke", "#136D70")
+        .attr("fill", "#6a040f")
+        .attr("stroke", "darkred")
         .attr("clip-path", "url(#clip)");
 
     // draw pathOne
     vis.pathTwo.datum(vis.dataPathTwo)
         .transition().duration(400)
         .attr("d", vis.area)
-        .attr('fill', 'rgba(255,0,0,0.47)')
-        .attr("stroke", "#darkred")
+        .attr('fill', 'yellow')//rgba(255,0,0,0.47)')
+        .attr("stroke", "yellow")
         .attr("clip-path", "url(#clip)");
 
     vis.brushGroup

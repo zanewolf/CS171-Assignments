@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3285c9de-1f83-4d63-996d-69c4a660ffc7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/Activity_2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Week 7/submission_week-07_ZaneWolf/implementation/hw/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Week 7/submission_week-07_ZaneWolf/implementation/hw/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Week 8/submission_week-08_ZaneWolf/implementation/hw/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Week 8/submission_week-08_ZaneWolf/implementation/hw/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Week 8/submission_week-08_ZaneWolf/implementation/hw/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Week 8/submission_week-08_ZaneWolf/implementation/hw/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Week 8/submission_week-08_ZaneWolf/implementation/hw/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Week 8/submission_week-08_ZaneWolf/implementation/hw/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Week 8/submission_week-08_ZaneWolf/implementation/hw/js/barVis.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Week 8/submission_week-08_ZaneWolf/implementation/hw/js/barVis.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Week 8/submission_week-08_ZaneWolf/implementation/hw/js/brushVis.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Week 8/submission_week-08_ZaneWolf/implementation/hw/js/brushVis.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Week 8/submission_week-08_ZaneWolf/implementation/hw/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Week 8/submission_week-08_ZaneWolf/implementation/hw/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Week 8/submission_week-08_ZaneWolf/implementation/hw/js/mapVis.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Week 8/submission_week-08_ZaneWolf/implementation/hw/js/mapVis.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Week 8/submission_week-08_ZaneWolf/implementation/lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Week 8/submission_week-08_ZaneWolf/implementation/lab/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../.." />
+  </component>
+  <component name="ProjectId" id="1jTQZcbXlPqgJDtolghyWwHAK5y" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3285c9de-1f83-4d63-996d-69c4a660ffc7" name="Default Changelist" comment="" />
+      <created>1603825658494</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603825658494</updated>
+      <workItem from="1603825659630" duration="2940000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

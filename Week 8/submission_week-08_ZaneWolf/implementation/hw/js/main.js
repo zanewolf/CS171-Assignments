@@ -2,6 +2,14 @@
 *           MAIN           *
 * * * * * * * * * * * * * */
 
+// WISH LIST ITEMS:
+// Remove wrangleData to separate file.
+//      Rather than have both have the Table, Map, and Bar charts have
+//      the SAME EXACT 60 LINES OF CODE.
+// Move state info into a look up table, the output of wrangleData?
+//      { state : { key: value}}
+// Add '%' to legend labels
+
 // init global variables & switches
 let myDataTable,
     myMapVis,
@@ -39,7 +47,8 @@ function initMainPage(dataArray) {
     myMapVis = new MapVis('mapDiv', dataArray[0], dataArray[1], dataArray[2]);
 
     // TODO - init bars
-    myBarVisOne = new BarVis('bar1',dataArray[1], dataArray[2]);
+    myBarVisOne = new BarVis('bar1',dataArray[1], dataArray[2], true, "Worst 10 States");
+    myBarVisTwo = new BarVis('bar2',dataArray[1], dataArray[2], false, "Best 10 States");
     // myBarVisTwo = new BarVis('bar2',
 
     // init brush
@@ -51,7 +60,10 @@ let selectedCategory = $('#categorySelector').val();
 
 function categoryChange() {
     selectedCategory = $('#categorySelector').val();
-    myMapVis.wrangleData(selectedCategory); // maybe you need to change this slightly depending on the name of your MapVis instance
+    myMapVis.wrangleData(selectedCategory);
+    myBarVisOne.wrangleData(selectedCategory);
+    myBarVisTwo.wrangleData(selectedCategory)
+
 }
 
 

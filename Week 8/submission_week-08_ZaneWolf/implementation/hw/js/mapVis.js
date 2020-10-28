@@ -25,7 +25,7 @@ class MapVis {
         vis.selectedCategory = 'absCases';
 
         // set up margin conventions
-        vis.margin = {top: 50, right: 20, bottom: 20, left: 20};
+        vis.margin = {top: 20, right: 20, bottom: 10, left: 20};
         vis.width = $("#" + vis.parentElement).width() - vis.margin.left - vis.margin.right;
         vis.height = $("#" + vis.parentElement).height() - vis.margin.top - vis.margin.bottom;
 
@@ -44,7 +44,7 @@ class MapVis {
         vis.path = d3.geoPath();
             // .projection(vis.projection);
 
-        // shoutout to robert r.
+        // redefine the map with the zoom magic
         vis.viewpoint = {'width':975, 'height': 1000};
         vis.zoom = vis.width/vis.viewpoint.width;
 
@@ -72,7 +72,7 @@ class MapVis {
         vis.legend = vis.svg.append("g")
             .attr('class', 'legend')
             .attr('id', 'legend')
-            .attr('transform', `translate(${vis.margin.left}, ${vis.height - 80})`)
+            .attr('transform', `translate(${vis.margin.left+10}, ${vis.height - 60})`)
 
 
         this.wrangleData(vis.selectedCategory)
@@ -87,7 +87,6 @@ class MapVis {
 
         // if there is a region selected
         if (selectedTimeRange.length !== 0){
-            //console.log('region selected', vis.selectedTimeRange, vis.selectedTimeRange[0].getTime() )
 
             // iterate over all rows the csv (dataFill)
             vis.covidData.forEach( row => {
@@ -105,8 +104,6 @@ class MapVis {
         // prepare covid data by grouping all rows by state
         let covidDataByState = Array.from(d3.group(filteredData, d =>d.state), ([key, value]) => ({key, value}))
 
-        // have a look
-        // console.log(covidDataByState)
 
         // init final data structure in which both data sets will be merged into
         vis.stateInfo = []
@@ -162,7 +159,7 @@ class MapVis {
 
         // added a cushion to the scale, don't mind the ugliness.
         vis.colorScale = d3.scaleSequential()
-            .interpolator(d3.interpolateGnBu)
+            .interpolator(d3.interpolateYlOrRd)
             .domain([d3.min(vis.stateInfo, d=>d[vis.selectedCategory])-d3.min(vis.stateInfo, d=>d[vis.selectedCategory])*0.05,d3.max(vis.stateInfo, d=>d[vis.selectedCategory])+d3.max(vis.stateInfo, d=>d[vis.selectedCategory])*0.15])
 
         // *just so*
@@ -175,7 +172,7 @@ class MapVis {
             .shapeHeight(20)
             .labelOffset(15)
 
-        // *just so intensifies*
+        // *just so /intensifies/*
         if (vis.selectedCategory==="absCases"){
             vis.colorLegend.labelFormat('.2s')
         } else if (vis.selectedCategory ==="absDeaths"){
@@ -190,14 +187,16 @@ class MapVis {
 
         vis.legend
             .call(vis.colorLegend)
+            .attr("class", "myLegend")
+
 
         // a second way to make a legend.
         // it's continuous, but only vertical and requires legend2.js. Wasn't worth the hassle of making sure it was placed right, so bewarned if you uncomment. O.o
         // continuous("#mapDiv", vis.colorScale)
 
 
-
         // making a map
+        // wanted to also add transition/duration but honestly the webpage was getting kinda bogged down and slow with everything at this point. figured it'd be better to leave it out.
         vis.states
             .attr("fill", function(d){
                 // console.log(d)
@@ -211,52 +210,55 @@ class MapVis {
 
                 })
                 return color;
+            });
+
+        // add tooltip functionality
+       vis.states
+           .on('mouseover', function(event, d){
+            // console.log(d)
+            d3.select(this)
+                .attr('stroke-width', '2px')
+                .attr('stroke', 'black')
+                .attr('fill', 'grey')
+
+            let myState = d.properties.name
+            let myStateInfo = vis.stateInfo.filter(function(d){
+                return d.state == myState;
             })
-            .on('mouseover', function(event, d){
-                // console.log(d)
-                d3.select(this)
-                    .attr('stroke-width', '2px')
-                    .attr('stroke', 'black')
-                    .attr('fill', 'grey')
 
-                let myState = d.properties.name
-                let myStateInfo = vis.stateInfo.filter(function(d){
-                    return d.state == myState;
-                })
-
-                vis.tooltip
-                    .style("opacity", 1)
-                    .style("left", event.pageX + 20 + "px")
-                    .style("top", event.pageY + "px")
-                    // .text("Herllo ourt thheeerrr")
-                    .html(`
-                         <div style="border: thin solid grey; border-radius: 5px; background: lightgrey; padding: 20px">
-                             <h3>${d.properties.name}<h3>
-                             <p> <strong> Population </strong>: ${myStateInfo[0].population}</p>  
-                             <p> <strong>Absolute Cases: </strong>${myStateInfo[0].absCases}</p>
-                             <p> <strong>Absolute Deaths: </strong>${myStateInfo[0].absDeaths}</p>
-                             <p> <strong>Relative Cases: </strong>${myStateInfo[0].relCases.toFixed(2)}%</p>
-                             <p> <strong>Relative Deaths: </strong>${myStateInfo[0].relDeaths.toFixed(3)}%</p>    
-                         </div>`);
-            })
-            .on('mouseout', function(event, d){
-                d3.select(this)
-                    .attr('stroke-width', '0px')
-                    .attr("fill", function(d){
-                        let myState = d.properties.name
-                        let myStateInfo = vis.stateInfo.filter(function(d){
-                            return d.state == myState;
-                        })
-
-                        return vis.colorScale(myStateInfo[0][vis.selectedCategory])
+            vis.tooltip
+                .style("opacity", 1)
+                .style("left", event.pageX + 20 + "px")
+                .style("top", event.pageY + "px")
+                // .text("Herllo ourt thheeerrr")
+                .html(`
+                     <div style="border: thin solid grey; border-radius: 5px; background: darkgray; padding: 20px">
+                         <h3>${d.properties.name}<h3>
+                         <p> <strong> Population </strong>: ${myStateInfo[0].population}</p>  
+                         <p> <strong>Absolute Cases: </strong>${myStateInfo[0].absCases}</p>
+                         <p> <strong>Absolute Deaths: </strong>${myStateInfo[0].absDeaths}</p>
+                         <p> <strong>Relative Cases: </strong>${myStateInfo[0].relCases.toFixed(2)}%</p>
+                         <p> <strong>Relative Deaths: </strong>${myStateInfo[0].relDeaths.toFixed(3)}%</p>    
+                     </div>`);
+        })
+        .on('mouseout', function(event, d){
+            d3.select(this)
+                .attr('stroke-width', '0px')
+                .attr("fill", function(d){
+                    let myState = d.properties.name
+                    let myStateInfo = vis.stateInfo.filter(function(d){
+                        return d.state == myState;
                     })
 
-                vis.tooltip
-                    .style("opacity", 0)
-                    .style("left", 0)
-                    .style("top", 0)
-                    .html(``);
-            });
+                    return vis.colorScale(myStateInfo[0][vis.selectedCategory])
+                })
+
+            vis.tooltip
+                .style("opacity", 0)
+                .style("left", 0)
+                .style("top", 0)
+                .html(``);
+        });
     }
 
 }
