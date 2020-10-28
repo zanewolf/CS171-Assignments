@@ -63,10 +63,7 @@ class MapVis {
             .attr("fill", "transparent")
             .attr("d", vis.path)
 
-        // append tooltip
-        vis.tooltip = d3.select("body").append('div')
-            .attr('class', "tooltip")
-            .attr('id', 'mapTooltip');
+
 
         // append legend
         vis.legend = vis.svg.append("g")
@@ -151,6 +148,11 @@ class MapVis {
     updateVis(){
         let vis = this;
 
+        // append tooltip
+        vis.tooltip = d3.select("body").append('div')
+            .attr('class', "tooltip")
+            .attr('id', 'mapTooltip');
+
         // set up the Legend
         // I wasted so much time getting this legend *just so*.
 
@@ -162,6 +164,8 @@ class MapVis {
             .interpolator(d3.interpolateYlOrRd)
             .domain([d3.min(vis.stateInfo, d=>d[vis.selectedCategory])-d3.min(vis.stateInfo, d=>d[vis.selectedCategory])*0.05,d3.max(vis.stateInfo, d=>d[vis.selectedCategory])+d3.max(vis.stateInfo, d=>d[vis.selectedCategory])*0.15])
 
+        //https://observablehq.com/@d3/color-schemes
+
         // *just so*
         vis.colorLegend = d3.legendColor()
             .scale(vis.colorScale)
@@ -171,6 +175,8 @@ class MapVis {
             .shapeWidth(60)
             .shapeHeight(20)
             .labelOffset(15)
+
+        //https://d3-legend.susielu.com/
 
         // *just so /intensifies/*
         if (vis.selectedCategory==="absCases"){

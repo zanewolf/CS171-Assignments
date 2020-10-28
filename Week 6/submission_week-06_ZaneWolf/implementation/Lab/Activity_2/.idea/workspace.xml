@@ -20,18 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3285c9de-1f83-4d63-996d-69c4a660ffc7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Activity_2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../HW/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../HW/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../../Week 7/submission_week-07_ZaneWolf/implementation/hw/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Week 7/submission_week-07_ZaneWolf/implementation/hw/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../../Week 8/submission_week-08_ZaneWolf/implementation/hw/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Week 8/submission_week-08_ZaneWolf/implementation/hw/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Week 8/submission_week-08_ZaneWolf/implementation/hw/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Week 8/submission_week-08_ZaneWolf/implementation/hw/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Week 8/submission_week-08_ZaneWolf/implementation/hw/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Week 8/submission_week-08_ZaneWolf/implementation/hw/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Week 8/submission_week-08_ZaneWolf/implementation/hw/js/barVis.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Week 8/submission_week-08_ZaneWolf/implementation/hw/js/barVis.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Week 8/submission_week-08_ZaneWolf/implementation/hw/js/brushVis.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Week 8/submission_week-08_ZaneWolf/implementation/hw/js/brushVis.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Week 8/submission_week-08_ZaneWolf/implementation/hw/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Week 8/submission_week-08_ZaneWolf/implementation/hw/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../../Week 8/submission_week-08_ZaneWolf/implementation/hw/js/mapVis.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Week 8/submission_week-08_ZaneWolf/implementation/hw/js/mapVis.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../../Week 8/submission_week-08_ZaneWolf/implementation/lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Week 8/submission_week-08_ZaneWolf/implementation/lab/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -62,7 +54,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603825658494</updated>
-      <workItem from="1603825659630" duration="2940000" />
+      <workItem from="1603825659630" duration="2993000" />
     </task>
     <servers />
   </component>

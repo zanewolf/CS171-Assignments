@@ -55,8 +55,7 @@ class BarVis {
         vis.svg.append("g")
             .attr("class", "y-axis axis")
 
-        // x
-        // or y not
+        // y not
         vis.xScale=d3.scaleBand()
             .range([10, vis.width])
             .paddingInner(0.2);
@@ -198,58 +197,54 @@ class BarVis {
             .data(vis.topTenData);
 
         // enter and update
-        vis.bar.enter().append("rect")
-            .merge(vis.bar)
-            .transition()
-            .duration(500)
+        vis.bar
+            .enter().append("rect")
             .attr("class", "bar")
             .attr("x", function (d) { return vis.xScale(d.state);} )
             .attr("y", function(d) { return vis.yScale(d[vis.selectedCategory]); })
             .attr("height", function(d) { return (vis.height-vis.yScale(d[vis.selectedCategory])); })
             .attr("width", vis.xScale.bandwidth() )
             .attr("fill", d=> vis.colorScale(d[vis.selectedCategory]))
-            .attr("stroke-width", "4");
-
-        //add tooltip functions
-        vis.bar
+            .attr("stroke-width", "4")
             .on('mouseover', function(event, d){
-            console.log(d)
-            d3.select(this)
-                .attr('stroke-width', '2px')
-                .attr('stroke', 'black')
-                .attr('fill', 'grey')
+                console.log(d)
+                d3.select(this)
+                    .attr('stroke-width', '2px')
+                    .attr('stroke', 'black')
+                    .attr('fill', 'grey')
 
-            let myState = d.state
-            let myStateInfo = vis.topTenData.filter(function(d){
-                return d.state == myState;
-            })
+                // let myState = d.state
+                // let myStateInfo = vis.topTenData.filter(function(d){
+                //     return d.state == myState;
+                // })
 
-            vis.tooltip
-                .style("opacity", 1)
-                .style("left", event.pageX + 20 + "px")
-                .style("top", event.pageY + "px")
-                // .text("Herllo ourt thheeerrr")
-                .html(`
+                vis.tooltip
+                    .style("opacity", 1)
+                    .style("left", event.pageX + -350 + "px")
+                    .style("top", event.pageY + "px")
+                    // .text("Herllo ourt thheeerrr")
+                    .html(`
                      <div style="border: thin solid grey; border-radius: 5px; background: darkgrey; padding: 20px">
                          <h3>${d.state}<h3>
-                         <p> <strong> Population </strong>: ${myStateInfo[0].population}</p>  
-                         <p> <strong>Absolute Cases: </strong>${myStateInfo[0].absCases}</p>
-                         <p> <strong>Absolute Deaths: </strong>${myStateInfo[0].absDeaths}</p>
-                         <p> <strong>Relative Cases: </strong>${myStateInfo[0].relCases.toFixed(2)}%</p>
-                         <p> <strong>Relative Deaths: </strong>${myStateInfo[0].relDeaths.toFixed(3)}%</p>    
+                         <p> <strong> Population </strong>: ${d.population}</p>  
+                         <p> <strong>Absolute Cases: </strong>${d.absCases}</p>
+                         <p> <strong>Absolute Deaths: </strong>${d.absDeaths}</p>
+                         <p> <strong>Relative Cases: </strong>${d.relCases.toFixed(2)}%</p>
+                         <p> <strong>Relative Deaths: </strong>${d.relDeaths.toFixed(3)}%</p>    
                      </div>`);
             })
             .on('mouseout', function(event, d){
                 d3.select(this)
                     .attr('stroke-width', '0px')
                     .attr("fill", function(d){
-                        console.log(d)
-                        let myState = d.state
-                        let myStateInfo = vis.stateInfo.filter(function(d){
-                            return d.state == myState;
-                        })
+                        // let myState = d.state
+                        // let myStateInfo = vis.stateInfo.filter(function(d){
+                        //     return d.state == myState;
+                        // })
 
-                        return vis.colorScale(vis.stateInfo[0][vis.selectedCategory])
+                        console.log(vis.colorScale(d[vis.selectedCategory]))
+
+                        return vis.colorScale(d[vis.selectedCategory])
                     })
 
                 vis.tooltip
@@ -257,7 +252,15 @@ class BarVis {
                     .style("left", 0)
                     .style("top", 0)
                     .html(``);
-            });
+            })
+            .merge(vis.bar)
+            .transition()
+            .duration(500)
+;
+
+        //add tooltip functions
+        vis.bar
+            ;
 
         vis.bar.exit().remove();
 

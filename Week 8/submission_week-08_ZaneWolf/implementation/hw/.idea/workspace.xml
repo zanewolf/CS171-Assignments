@@ -20,18 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32e3a062-d34d-4121-9049-d93174c859df" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../../Week 6/submission_week-06_ZaneWolf/implementation/Lab/Activity_2/.idea/Activity_2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../Week 6/submission_week-06_ZaneWolf/implementation/Lab/Activity_2/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../Week 6/submission_week-06_ZaneWolf/implementation/Lab/Activity_2/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../Week 6/submission_week-06_ZaneWolf/implementation/Lab/Activity_2/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../Week 6/submission_week-06_ZaneWolf/implementation/HW/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Week 6/submission_week-06_ZaneWolf/implementation/HW/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Week 6/submission_week-06_ZaneWolf/implementation/Lab/Activity_2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Week 6/submission_week-06_ZaneWolf/implementation/Lab/Activity_2/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../Week 7/submission_week-07_ZaneWolf/implementation/hw/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Week 7/submission_week-07_ZaneWolf/implementation/hw/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/barVis.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/barVis.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/brushVis.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/brushVis.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/mapVis.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/mapVis.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lab/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -73,7 +67,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603645293622</updated>
-      <workItem from="1603645294779" duration="47580000" />
+      <workItem from="1603645294779" duration="53160000" />
     </task>
     <servers />
   </component>

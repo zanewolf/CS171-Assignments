@@ -15,7 +15,26 @@ body{
     /*  pointer-events: none;	This line needs to be removed */
 }
 
+.tooltip2 {
+
+    position: absolute;
+    text-align: center;
+    width: 350px;
+    height: auto;
+    padding: 2px;
+    font: 12px sans-serif;
+    background: lightsteelblue;
+    border-radius: 8px;
+    /*  pointer-events: none;	This line needs to be removed */
+}
+
+
 .tooltip p{
+    font-size: 12pt;
+}
+
+
+.tooltip2 p{
     font-size: 12pt;
 }
 
