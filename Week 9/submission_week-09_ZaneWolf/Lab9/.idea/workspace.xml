@@ -20,28 +20,47 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f54767a3-58bf-4201-8f0c-8a3077d1288f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/florentine-family-attributes.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/matrixVis.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Week 6/submission_week-06_ZaneWolf/implementation/Lab/Activity_2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Week 6/submission_week-06_ZaneWolf/implementation/Lab/Activity_2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Week 6/submission_week-06_ZaneWolf/implementation/Lab/Activity_2/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Week 6/submission_week-06_ZaneWolf/implementation/Lab/Activity_2/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../Week 8/submission_week-08_ZaneWolf/implementation/hw/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Week 8/submission_week-08_ZaneWolf/implementation/hw/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Week 8/submission_week-08_ZaneWolf/implementation/lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Week 8/submission_week-08_ZaneWolf/implementation/lab/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/florentine-family-attributes.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/florentine-family-attributes.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
   <component name="ProjectId" id="1jZgarZZ1ohlz9Ju1ItrmyfeqZh" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -51,7 +70,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1604017094139</updated>
-      <workItem from="1604017096108" duration="1377000" />
+      <workItem from="1604017096108" duration="7587000" />
     </task>
     <servers />
   </component>
@@ -68,5 +87,18 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="505" y="308" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1604019817773">
+      <screen x="0" y="0" width="1649" height="1143" />
+    </state>
+    <state x="505" y="308" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1649.1143/-1920.263.1858.1080@0.0.1649.1143" timestamp="1604019817773" />
+    <state x="334" y="217" key="SettingsEditor" timestamp="1604019335190">
+      <screen x="0" y="0" width="1649" height="1143" />
+    </state>
+    <state x="334" y="217" key="SettingsEditor/0.0.1649.1143/-1920.263.1858.1080@0.0.1649.1143" timestamp="1604019335190" />
   </component>
 </project>

@@ -1,3 +1,9 @@
-/*body{*/
-/*    font-family;*/
-/*}*/
+@font-face{
+    font-family: Tangerine-Regular;
+    src: url("../fonts/Tangerine-Regular.ttf")
+}
+
+h1 {
+    font-family: Tangerine-Regular;
+    font-size: 50pt;
+}
