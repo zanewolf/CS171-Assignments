@@ -5,5 +5,16 @@
 
 h1 {
     font-family: Tangerine-Regular;
-    font-size: 50pt;
+    font-size: 60pt;
+}
+
+.text{
+    font-family: Tangerine-Regular;
+    font-size: 40pt;
+}
+
+.row-label,.col-label{
+    font-family: Tangerine-Regular;
+    font-size: 20pt;
+    stroke-width: 5pt;
 }

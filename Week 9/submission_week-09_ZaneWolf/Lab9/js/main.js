@@ -5,6 +5,8 @@ var color3 = "#2D3142";
 var color4 = "#BFC0C0";
 var color5 = "#FFFFFF";
 
+
+
 let myMatrixVis;
 
 let  marriageData = [
@@ -57,4 +59,8 @@ function loadData(){
 
         myMatrixVis = new MatrixVis("matrix", csv, marriageData, businessData);
     })
+}
+
+function orderChange(){
+    myMatrixVis.wrangleData();
 }
