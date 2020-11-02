@@ -110,7 +110,7 @@ function updateVisualization(selectedValue) {
 		.transition()
 		.duration(1000)
 		.call(d3.axisBottom(x));
-
+d
 	// update y axis
 	svg.selectAll('.yaxis')
 		.transition()
