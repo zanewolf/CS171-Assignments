@@ -20,13 +20,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ee2b34b9-a19d-4440-a0be-0564b142b563" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../../../Week 3/submission_ZaneWolf/hw/implementation/HW3_Pizza/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Week 3/submission_ZaneWolf/hw/implementation/HW3_Pizza/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Week 6/submission_week-06_ZaneWolf/implementation/HW/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Week 6/submission_week-06_ZaneWolf/implementation/HW/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../submission_week-07_ZaneWolf.zip" beforeDir="false" afterPath="$PROJECT_DIR$/../../../submission_week-07_ZaneWolf.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hw/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hw/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hw/js/barchart.js" beforeDir="false" afterPath="$PROJECT_DIR$/../hw/js/barchart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hw/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../hw/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../Week 10/submission_week-10_ZaneWolf/Lab10/.idea/Lab10.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../Week 10/submission_week-10_ZaneWolf/Lab10/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../Week 10/submission_week-10_ZaneWolf/Lab10/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../Week 10/submission_week-10_ZaneWolf/Lab10/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../Week 10/submission_week-10_ZaneWolf/Lab10/js/contextvis.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Week 10/submission_week-10_ZaneWolf/Lab10/js/agevis.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Week 10/submission_week-10_ZaneWolf/Lab10/js/agevis.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Week 10/submission_week-10_ZaneWolf/Lab10/js/countvis.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Week 10/submission_week-10_ZaneWolf/Lab10/js/countvis.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Week 10/submission_week-10_ZaneWolf/Lab10/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Week 10/submission_week-10_ZaneWolf/Lab10/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Week 10/submission_week-10_ZaneWolf/Lab10/js/priovis.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Week 10/submission_week-10_ZaneWolf/Lab10/js/priovis.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Week 8/submission_week-08_ZaneWolf/implementation/hw/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Week 8/submission_week-08_ZaneWolf/implementation/hw/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Week 8/submission_week-08_ZaneWolf/implementation/lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Week 8/submission_week-08_ZaneWolf/implementation/lab/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Week 9/submission_week-09_ZaneWolf/Lab9/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Week 9/submission_week-09_ZaneWolf/Lab9/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +51,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../Week 3/submission_ZaneWolf/hw/implementation/HW3_Pizza" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../hw" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -56,6 +62,7 @@
       <option name="presentableId" value="Default" />
       <updated>1602639340472</updated>
       <workItem from="1602639341638" duration="17148000" />
+      <workItem from="1604330390903" duration="1262000" />
     </task>
     <servers />
   </component>
@@ -72,12 +79,14 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="605" y="327" key="FileChooserDialogImpl" timestamp="1602875269217">
+    <state x="605" y="327" key="FileChooserDialogImpl" timestamp="1604333201924">
       <screen x="0" y="0" width="1649" height="1143" />
     </state>
     <state x="605" y="327" key="FileChooserDialogImpl/0.0.1649.1143/-1920.242.1858.1080@0.0.1649.1143" timestamp="1602875269217" />
+    <state x="605" y="327" key="FileChooserDialogImpl/0.0.1649.1143/-1920.263.1858.1080@0.0.1649.1143" timestamp="1604333201924" />
     <state x="536" y="273" width="576" height="596" key="find.popup" timestamp="1602848024890">
       <screen x="0" y="0" width="1649" height="1143" />
     </state>

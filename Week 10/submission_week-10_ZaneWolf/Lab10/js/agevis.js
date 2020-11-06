@@ -99,13 +99,23 @@ class AgeVis {
         let vis = this;
 
         // Create a sequence of values from 0 - 98 (age: 1-99; array length: 99)
-        // let votesPerAge = ...
+        let votesPerAge = d3.range(0,99).map(function(i){
+            return i;
+        })
 
-        // Iterate over each day
-        // ...
+        // console.log(votesPerAge);
 
+        // Aggegrate by category:
+        // Iterate over each day and fill array
+        vis.filteredData.forEach(function(day){
+            d3.range(0,99).forEach(function(i){
+                votesPerAge[i] += day["ages"][i];
+            });
+        });
 
-        // vis.displayData = votesPerAge;
+        // console.log(votesPerAge);
+
+        vis.displayData = votesPerAge;
 
         // Update the visualization
         vis.updateVis();
@@ -143,10 +153,9 @@ class AgeVis {
         let vis = this;
 
 
-        // Filter data depending on selected time period (brush)
-
-        // *** TO-DO ***
-
+        vis.filteredData = vis.data.filter(function (d) {
+            return ((d.time >= selectionStart) && (d.time <= selectionEnd))
+        });
 
         vis.wrangleData();
     }

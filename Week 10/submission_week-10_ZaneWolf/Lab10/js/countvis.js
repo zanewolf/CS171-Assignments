@@ -8,9 +8,10 @@
 class CountVis {
 
 
-	constructor(_parentElement, _data) {
+	constructor(_parentElement, _data, myEventHandler) {
 		this.parentElement = _parentElement;
 		this.data = _data;
+		this.myEventHandler = myEventHandler;
 
 		this.initVis();
 	}
@@ -43,8 +44,7 @@ class CountVis {
 		vis.y = d3.scaleLinear()
 			.range([vis.height, 0]);
 
-		vis.xAxis = d3.axisBottom()
-			.scale(vis.x);
+
 
 		vis.yAxis = d3.axisLeft()
 			.scale(vis.y)
@@ -57,6 +57,10 @@ class CountVis {
 
 		let minMaxX = d3.extent(vis.data.map(function (d) { return d.time; }));
 		vis.x.domain(minMaxX);
+
+		vis.xScaleModified = vis.x;
+		vis.xAxis = d3.axisBottom()
+			.scale(vis.xScaleModified);
 
 
 		vis.svg.append("g")
@@ -89,13 +93,61 @@ class CountVis {
 
 		// Initialize brushing component
 
-		// *** TO-DO ***
+		vis.brush = d3.brushX()
+			.extent([[0,0],[vis.width, vis.height]])
+			.on("brush", function(event){
+				// User just selected a specific region
+				vis.currentBrushRegion = event.selection;
+				vis.currentBrushRegion = vis.currentBrushRegion.map(vis.xScaleModified.invert);
+
+				// 3. Trigger the event 'selectionChanged' of our event handler
+				$(vis.myEventHandler).trigger("selectionChanged", vis.currentBrushRegion);
+			});
+
+		vis.brushGroup = vis.svg.append("g")
+			.attr("class", "brush");
 
 
-		// Append brush component here
+		// Original scale
+		vis.xScaleOrig = vis.x;
 
-		// *** TO-DO ***
+		// Initialize the zoom component
+		vis.zoom = d3.zoom()
+			// Subsequently, you can listen to all zooming events
+			.on("zoom", function(event){
+				console.log("zoom");
+				vis.xScaleModified = event.transform.rescaleX(vis.x);
+				if(vis.currentBrushRegion) {
+					vis.brushGroup.call(vis.brush.move, vis.currentBrushRegion.map(vis.xScaleOrig));
+					vis.x.domain([vis.x.invert(vis.currentBrushRegion.map(vis.xScaleModified)[0]),vis.x.invert(vis.currentBrushRegion.map(vis.xScaleModified)[1])])
+				}
+				vis.updateVis();
 
+			})
+			// .on("dblclick.zoom", function(event){
+			// 	vis.x.domain(vis.xScaleOrig)
+			// })
+			// Specify the zoom scale's allowed range
+			.scaleExtent([1,20]);
+
+		// d3.select('#Reset').on('click', function (event) {
+		// 	console.log("reset")
+		// 	vis.x.domain(d3.extent(vis.data.map(function (d) { return d.time; })))
+		//
+		// })
+
+		vis.brushGroup.call(vis.zoom)
+			.on("mousedown.zoom", null)
+			.on("touchstart.zoom", null);
+
+
+		// Define the clipping region
+		vis.svg.append("defs")
+			.append("clipPath")
+			.attr("id", "clip")
+			.append("rect")
+			.attr("width", vis.width)
+			.attr("height", vis.height);
 
 		// (Filter, aggregate, modify data)
 		vis.wrangleData();
@@ -125,11 +177,19 @@ class CountVis {
 
 	updateVis() {
 		let vis = this;
-
-
+		//
+		// vis.xAxis.scale(vis.xScaleModified)
 		// Call brush component here
 
-		// *** TO-DO ***
+		vis.svg
+			.select(".brush")
+			.call(vis.brush)
+			// .selectAll("rect")
+			// .attr("height", vis.height)
+			// .attr("clip-path", "url(#clip)")
+		;
+
+
 
 
 		// Call the area function and update the path
@@ -137,11 +197,29 @@ class CountVis {
 		// The area function translates the data into positions on the path in the SVG.
 		vis.timePath
 			.datum(vis.displayData)
-			.attr("d", vis.area);
+			.merge(vis.timePath)
+			.transition()
+			.duration(1000)
+			.attr("d", vis.area)
+			.attr("clip-path", "url(#clip)");
 
 
 		// Call axis functions with the new domain 
 		vis.svg.select(".x-axis").call(vis.xAxis);
 		vis.svg.select(".y-axis").call(vis.yAxis);
+
+
 	}
+	//
+	// zoomFunction(event){
+	// 	let vis = this;
+	//
+	// 	let xRescaled = event.transform.rescaleX(vis.XOirginal);
+	// 	if(vis.currentBrushRegion){
+	// 		vis.svg.selectAll(".brush").call(vis.brush.move, vis.currentBrushRegion.map(xRescaled));
+	//
+	// 	}
+	//
+	// 	vis.updateVis();
+	// }
 }

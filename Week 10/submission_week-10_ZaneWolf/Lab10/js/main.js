@@ -17,8 +17,9 @@ Promise.all(promises)
 
 
 	function createVis(data){
-		let perDayData = data[0]
-		let metaData = data[1]
+		let perDayData = data[0];
+		let metaData = data[1];
+
 	// (2) Make our data look nicer and more useful
 	allData = perDayData.map(function (d) {
 		
@@ -49,22 +50,25 @@ Promise.all(promises)
 		return result;
 	});
 
+	// console.log(allData);
 
-	// (3) Create event handler
 
-	// *** TO-DO ***
-
+	// 1. Create event handler
+	let MyEventHandler = {};
 
 
 	// (4) Create visualization instances
-	let countVis = new CountVis("countvis", allData);
-
-	// *** TO-DO ***
-
+	let countVis = new CountVis("countvis", allData, MyEventHandler);
+	let ageVis = new AgeVis("agevis", allData);
+	let prioVis = new PrioVis("priovis", allData, metaData);
 
 
 	// (5) Bind event handler
+
+	$(MyEventHandler).bind("selectionChanged", function(event, rangeStart, rangeEnd){
+		ageVis.onSelectionChange(rangeStart, rangeEnd);
+		prioVis.onSelectionChange(rangeStart, rangeEnd);
+	});
 	
-	// *** TO-DO ***
 
 }
