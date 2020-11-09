@@ -24,3 +24,7 @@ h1 .sub-headline {
 Specify size of the map container for leaflet
 #station-map {
  */
+#station-map {
+    width: 100%;
+    height: 600px;
+}

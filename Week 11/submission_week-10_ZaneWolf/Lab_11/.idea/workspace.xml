@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="081112ea-6761-4470-b17f-4faec938c348" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/css/leaflet.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/layers-2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/layers.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/marker-icon-2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/marker-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/marker-shadow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/leaflet-src.esm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/leaflet-src.esm.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/leaflet-src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/leaflet-src.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/leaflet.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/leaflet.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Week 10/submission_week-10_ZaneWolf/Lab10/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Week 10/submission_week-10_ZaneWolf/Lab10/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Week 10/submission_week-10_ZaneWolf/Lab10/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Week 10/submission_week-10_ZaneWolf/Lab10/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/stationMap.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/stationMap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Week 7/submission_week-07_ZaneWolf/implementation/hw/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Week 7/submission_week-07_ZaneWolf/implementation/hw/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Week 9/submission_week-09_ZaneWolf/Lab9/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Week 9/submission_week-09_ZaneWolf/Lab9/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="1k3XoVe0uqTSOpEygzsKgAzXY9M" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Week 7/submission_week-07_ZaneWolf/implementation/hw" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="081112ea-6761-4470-b17f-4faec938c348" name="Default Changelist" comment="" />
+      <created>1604930424468</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1604930424468</updated>
+      <workItem from="1604930425827" duration="9031000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="-1211" y="295" key="FileChooserDialogImpl" timestamp="1604936946652">
+      <screen x="-1920" y="0" width="1857" height="1080" />
+    </state>
+    <state x="-1211" y="295" key="FileChooserDialogImpl/-1920.0.1857.1080/0.0.1857.1080@-1920.0.1857.1080" timestamp="1604936946652" />
+    <state x="-1284" y="273" width="792" height="534" key="find.popup" timestamp="1604932985291">
+      <screen x="-1920" y="0" width="1857" height="1080" />
+    </state>
+    <state x="-1284" y="273" width="792" height="534" key="find.popup/-1920.0.1857.1080/0.0.1857.1080@-1920.0.1857.1080" timestamp="1604932985291" />
+    <state width="600" height="428" key="javadoc.popup" timestamp="1604934079776">
+      <screen x="-1920" y="0" width="1857" height="1080" />
+    </state>
+    <state width="600" height="428" key="javadoc.popup/-1920.0.1857.1080/0.0.1857.1080@-1920.0.1857.1080" timestamp="1604934079776" />
+  </component>
+</project>
