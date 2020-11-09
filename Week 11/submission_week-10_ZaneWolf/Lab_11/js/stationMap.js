@@ -36,6 +36,20 @@ class StationMap {
 		}).addTo(vis.map);
 
 
+		// initialize custom icons
+		let LeafIcon = L.Icon.extend({
+			options: {
+				shadowUrl: 'icons/marker-shadow.png',
+				iconSize: [25, 41],
+				iconAnchor: [12, 41],
+				popupAnchor: [0, -28]
+			}
+		});
+
+		vis.redMarker = new LeafIcon({ iconUrl:  'icons/marker-red.png' });
+		vis.blueMarker = new LeafIcon({ iconUrl:  'icons/marker-blue.png' });
+		vis.yellowMarker = new LeafIcon({ iconUrl:  'icons/marker-yellow.png' });
+
 
 		vis.wrangleData();
 	}
@@ -64,7 +78,11 @@ class StationMap {
 		vis.stations = L.layerGroup().addTo(vis.map)
 
 		vis.displayData.forEach((d,i)=>{
-			vis.marker = L.marker([d.lat, d.long]).addTo(vis.map).bindPopup(d.station + "<br> Available Bikes: " + d.bikes + "<br> Available Docks: " + d.docks)
+
+			let myicon = styleIcon(d)
+			// myicon=vis.redMarker
+
+			vis.marker = L.marker([d.lat, d.long],{icon: myicon}).addTo(vis.map).bindPopup(d.station + "<br> Available Bikes: " + d.bikes + "<br> Available Docks: " + d.docks)
 			vis.stations.addLayer(vis.marker)
 
 		})
@@ -86,6 +104,16 @@ class StationMap {
 				case 'ORANGE': return {color: "orange"};
 				case 'SILVER': return {color: "grey"};
 				case 'BLUE': return {color: "blue"};
+			}
+		}
+
+		function styleIcon(d){
+			console.log(d);
+
+			if (d.bikes === 0 | d.docks === 0 ) {
+				return vis.redMarker;
+			} else {
+				return vis.blueMarker;
 			}
 		}
 

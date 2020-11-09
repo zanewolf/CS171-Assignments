@@ -20,7 +20,7 @@ Promise.all(promises)
 		let perDayData = data[0];
 		let metaData = data[1];
 
-	// (2) Make our data look nicer and more useful
+forEac	// (2) Make our data look nicer and more useful
 	allData = perDayData.map(function (d) {
 		
 		let result = {

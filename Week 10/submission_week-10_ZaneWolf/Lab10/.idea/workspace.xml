@@ -20,20 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b06c9b18-9efe-4184-8540-6d7e97b14315" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Lab10.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/contextvis.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/agevis.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/agevis.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/countvis.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/countvis.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Week 11/submission_week-10_ZaneWolf.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/priovis.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/priovis.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Week 11/submission_week-10_ZaneWolf/Lab_11/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Week 11/submission_week-10_ZaneWolf/Lab_11/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Week 11/submission_week-10_ZaneWolf/images/layers-2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Week 11/submission_week-10_ZaneWolf/images/layers.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Week 11/submission_week-10_ZaneWolf/images/marker-icon-2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Week 11/submission_week-10_ZaneWolf/images/marker-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Week 11/submission_week-10_ZaneWolf/images/marker-shadow.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../Week 7/submission_week-07_ZaneWolf/implementation/hw/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Week 7/submission_week-07_ZaneWolf/implementation/hw/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Week 7/submission_week-07_ZaneWolf/implementation/lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Week 7/submission_week-07_ZaneWolf/implementation/lab/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Week 8/submission_week-08_ZaneWolf/implementation/hw/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Week 8/submission_week-08_ZaneWolf/implementation/hw/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Week 8/submission_week-08_ZaneWolf/implementation/lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Week 8/submission_week-08_ZaneWolf/implementation/lab/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../Week 9/submission_week-09_ZaneWolf/Lab9/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Week 9/submission_week-09_ZaneWolf/Lab9/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,7 +56,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Week 7/submission_week-07_ZaneWolf/implementation/hw" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../Final_Project/scroll_example/scroll_demo" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -70,7 +66,10 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1604326262090</updated>
-      <workItem from="1604326264115" duration="25098000" />
+      <workItem from="1604326264115" duration="25099000" />
+      <workItem from="1604673403674" duration="3396000" />
+      <workItem from="1604864345157" duration="4000" />
+      <workItem from="1604931485825" duration="1823000" />
     </task>
     <servers />
   </component>
@@ -87,11 +86,16 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1172" y="298" key="FileChooserDialogImpl" timestamp="1604594385291">
+    <state x="1172" y="298" key="FileChooserDialogImpl" timestamp="1604693005118">
       <screen x="0" y="0" width="1857" height="1080" />
     </state>
-    <state x="1172" y="298" key="FileChooserDialogImpl/-1920.0.1857.1080/0.0.1857.1080@0.0.1857.1080" timestamp="1604594385291" />
+    <state x="1172" y="298" key="FileChooserDialogImpl/-1920.0.1857.1080/0.0.1857.1080@0.0.1857.1080" timestamp="1604693005118" />
+    <state x="636" y="139" width="787" height="801" key="find.popup" timestamp="1604931513122">
+      <screen x="0" y="0" width="1857" height="1080" />
+    </state>
+    <state x="636" y="139" width="787" height="801" key="find.popup/-1920.0.1857.1080/0.0.1857.1080@0.0.1857.1080" timestamp="1604931513122" />
   </component>
 </project>
