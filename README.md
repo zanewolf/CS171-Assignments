@@ -2,4 +2,4 @@
 
 Here are some snapshots of the projects we completed throughout this course. 
 
-![Demo Animation](../assets/hw2.png)
+![Testing](./assets/hw2.png?raw=true)
