@@ -43,7 +43,7 @@ We learned how to implement brushing as a way of selecting and zooming in on dat
 Brushing with linke barcharts instead of an area chart
 
 ## Week 8 
-![lab8](./assets/lab8.v?raw=true)
+![lab8](./assets/lab8.PNG?raw=true)
 Our first map! The data was fake and hitting the update button generated new random data. I had a bit of trouble with the map in that it was....transparent? Not entirely, but the airport dots that are technically on the other side of the globe are visible, even though they really shouldn't be. Never figured that one out. 
 
 ![Hw8](./assets/hw8.PNG?raw=true)
